@@ -1,0 +1,41 @@
+.admin-outer {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .admin-credentials {
+        color: black;
+        font-size: 2rem;
+        .adminTextField {
+            width: 10rem;
+            color: black;
+            font-size: 1.3rem;
+            border: none;
+            padding: 0.5rem;
+            border-bottom: 1px solid #1C1C1C;
+            background-color: transparent;
+            outline: none;
+            margin: 1rem;
+        }
+        .adminLoginBtn {
+            background-color: #1C1C1C;
+            width: 10rem;
+            height: 4rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: aliceblue;
+        }
+        .adminLoginBtn.disabled {
+            cursor: not-allowed;
+            opacity: 0.5; 
+        }
+        
+    }
+}
