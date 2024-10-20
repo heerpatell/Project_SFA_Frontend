@@ -197,7 +197,7 @@ function Screen16() {
               >
 
 <div>Please make your choice: </div>
-                  <div style={{ color: "aliceblue" }}>
+                  <div style={{ color: "#cccccc" }}>
                     How much do you want to tip the Worker for their service?
                   </div>
                   <div>

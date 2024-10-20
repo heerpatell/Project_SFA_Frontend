@@ -467,8 +467,7 @@ function Screen14() {
                     can range from <b>zero up to 80 tokens.</b> That is,
                     Customers can tip nothing, can tip a maximum of 80 tokens,
                     or can tip anywhere in between. Importantly, Customers tip
-                    you <b>after</b>
-                    you serve them.
+                    you <b>after</b> you serve them.
                   </div>
                   {/*                   <div>
                     For example, suppose you choose an effort level of 0.6, and
