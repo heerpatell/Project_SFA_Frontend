@@ -39,6 +39,7 @@ const getEffort = async() => {
   .then((res)=>{
     console.log(36, res.data.effort)
     setEffort(res.data.effort)
+    if(res.data.effort == 0) {setCost(0)}
     if(res.data.effort == 0.1) {setCost(0)}
     if(res.data.effort == 0.2) {setCost(5)}
     if(res.data.effort == 0.3) {setCost(10)}
