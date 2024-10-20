@@ -44,7 +44,7 @@ function Screen20() {
         console.log(`Round: ${roundKey}, Data:`, roundData); // Debug: Check each round's data
 
         // If no matching customer is found, skip this round
-        if (!roundData) return null;
+        if (!roundData) return 0;
 
         // Calculate TotalComp for this round
         const totalComp = 60 + (roundData.effort * 200);
@@ -93,7 +93,7 @@ function Screen20() {
         console.log(`Round: ${roundKey}, Data:`, roundData); // Debug: Check each round's data
 
         // If no matching customer is found, skip this round
-        if (!roundData) return null;
+        if (!roundData) return 0;
 
         // Calculate TotalComp for this round
         const totalComp = 60 + (roundData.effort * 200) - 40;
@@ -153,6 +153,7 @@ function Screen20() {
         const roundData = fetchedData[roundKey].find(
           (data) => data.customer === pnumber
         );
+        if (!roundData) return 0;
         const effortTokens = Number(effortToTokens[roundData.effort]) || 0; 
         const totalComp = 60 + (roundData.effort*200) - roundData.pretip ;
         cumulativeComp += totalComp;
@@ -209,6 +210,7 @@ function Screen20() {
         const roundData = fetchedData[roundKey].find(
           (data) => data.customer === pnumber
         );
+        if (!roundData) return 0;
         const effortTokens = Number(effortToTokens[roundData.effort]) || 0; 
         const totalComp = 60  + (roundData.effort*200) - roundData.pretip; 
         cumulativeComp += totalComp;

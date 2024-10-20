@@ -316,6 +316,7 @@ function Screen19() {
           const roundData = res.data.matches.matches[roundKey].find(
             (data) => data.worker === Number(pnumber)
           );
+          if (!roundData) return 0;
           console.log(286, roundData);
           const effortTokens = Number(effortToTokens[roundData.effort]) || 0;
           const totalComp = 200 - effortTokens;
@@ -356,6 +357,7 @@ function Screen19() {
           const roundData = res.data.matches.matches[roundKey].find(
             (data) => data.worker === Number(pnumber)
           );
+          if (!roundData) return 0;
 
           const effortTokens = Number(effortToTokens[roundData.effort]) || 0;
           const totalComp = 160 + 40 - effortTokens;
@@ -397,6 +399,8 @@ function Screen19() {
             (data) => data.worker === Number(pnumber)
           );
 
+          if (!roundData) return 0;
+          
           const effortTokens = Number(effortToTokens[roundData.effort]) || 0;
           const totalComp = 160 + roundData.pretip - effortTokens;
           console.log(322, effortTokens);
@@ -437,6 +441,7 @@ function Screen19() {
           const roundData = res.data.matches.matches[roundKey].find(
             (data) => data.worker === Number(pnumber)
           );
+          if (!roundData) return 0;
           console.log(432, roundData);
           const effortTokens = Number(effortToTokens[roundData.effort]) || 0;
           const totalComp = 160 + roundData.pretip - effortTokens;
