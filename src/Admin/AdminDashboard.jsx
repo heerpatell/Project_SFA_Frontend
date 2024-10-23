@@ -140,7 +140,7 @@ function AdminDashboard() {
           </div>
 
           <div
-            className={`admin-dashbaord-generate ${!inp.participants || !inp.condition ? 'disabled' : ''}`}
+            className="admin-dashbaord-generate"
             onClick={() => generateLink(inp.participants, inp.condition)}
           >
             Generate a Link
