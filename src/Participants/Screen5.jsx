@@ -99,6 +99,7 @@ const [showPost, setShowPost] = useState(false)
                             <div style={{textAlign:'center'}}>Payoff = 60 + Satisfaction from Worker’s Service</div>
                             <div style={{textAlign:'center'}}>where, Satisfaction from Worker’s Service = Worker Effort Level * 200</div>
                             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service, which is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. </div>
+                            <div>The worker’s effort level can range from 1 to 10. That is, the Worker can provide a minimum effort level of 1, a maximum effort level of 10, or anywhere in between.</div>
                             <div>For example, suppose the Worker you are paired with chooses an effort level of 0.6. The payoff for you in this round will be 60 + 0.6*200 = 180 tokens. </div>
                         </div>
                     )
@@ -115,6 +116,7 @@ const [showPost, setShowPost] = useState(false)
                             <div style={{textAlign:'center'}}>where, Satisfaction from Worker’s Service = Worker Effort Level * 200, </div>
                             <div style={{textAlign:'center'}}>Service Charge Paid to the Worker = 40</div>
                             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service minus the <b>service charge</b> paid to the Worker. Your level of satisfaction with the Worker’s service is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. </div>
+                            <div>The worker’s effort level can range from 1 to 10. That is, the Worker can provide a minimum effort level of 1, a maximum effort level of 10, or anywhere in between.</div>
                             <div>Please note that you will pay a <b>fixed</b> amount of <b>service charge</b> of 40 tokens to the Worker in each round, regardless of how the Worker serves you.</div>
                             <div>For example, suppose the Worker you are paired with chooses an effort level of 0.6. The payoff for you in this round will be 60 + 0.6*200 – 40 = 140 tokens. </div>
                         </div>
@@ -131,6 +133,7 @@ const [showPost, setShowPost] = useState(false)
                             <div style={{textAlign:'center'}}>Payoff = 60 + Satisfaction from Worker’s Service – Tip Paid to the Worker</div>
                             <div style={{textAlign:'center'}}>where, Satisfaction from Worker’s Service = Worker Effort Level * 200</div>
                             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service minus the <b>tip</b> paid to the Worker. Your level of satisfaction with the Worker’s service is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. </div>
+                            <div>The worker’s effort level can range from 1 to 10. That is, the Worker can provide a minimum effort level of 1, a maximum effort level of 10, or anywhere in between.</div>
                             <div>Please note that you will decide how much to tip the Worker in each round. The amount of tip can range from <b>zero up to 80 tokens.</b> That is, you can tip nothing, can tip a maximum of 80 tokens, or can tip anywhere in between. Importantly, you tip the Worker <b>before</b> he/she serves you. </div>
                             <div>For example, suppose you decide to tip 40 tokens, and then the Worker you are paired with chooses an effort level of 0.6. The payoff for you in this round will be 60 + 0.6*200 – 40 = 140 tokens. </div>                        
                         </div>
@@ -147,6 +150,7 @@ const [showPost, setShowPost] = useState(false)
                             <div style={{textAlign:'center'}}>Payoff = 60 + Satisfaction from Worker’s Service – Tip Paid to the Worker</div>
                             <div style={{textAlign:'center'}}>where, Satisfaction from Worker’s Service = Worker Effort Level * 200</div>
                             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service minus the <b>tip</b> paid to the Worker. Your level of satisfaction with the Worker’s service is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. </div>
+                            <div>The worker’s effort level can range from 1 to 10. That is, the Worker can provide a minimum effort level of 1, a maximum effort level of 10, or anywhere in between.</div>
                             <div>Please note that you will decide how much to tip the Worker in each round. The amount of tip can range from <b>zero up to 80 tokens.</b> That is, you can tip nothing, can tip a maximum of 80 tokens, or can tip anywhere in between. Importantly, you tip the Worker <b>after</b> he/she serves you. </div>
                             <div>For example, suppose the Worker you are paired with chooses an effort level of 0.6, and then you decide to tip 40 tokens. The payoff for you in this round will be 60 + 0.6*200 – 40 = 140 tokens. </div> 
                         </div>
