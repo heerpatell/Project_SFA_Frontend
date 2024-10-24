@@ -34,6 +34,9 @@ function Screen27() {
     .then((res)=>{
       if(res.data.msg == 'Participant updated successfully'){
         navigate(`/screen28/${pnumber}/${condition}/${lastRoundCumulativeComp}`)
+      }else{
+        console.log(38, 'else part')
+        navigate(`/screen28/${pnumber}/${condition}/${lastRoundCumulativeComp}`)
       }
     })
   };
