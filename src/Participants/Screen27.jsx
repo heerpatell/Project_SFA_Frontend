@@ -32,7 +32,7 @@ function Screen27() {
     }
     await axios.post(`${REACT_APP_BACKEND_URL}/generate/postanswersfrom27`,userResp,{withCredentials:true})
     .then((res)=>{
-      console.log(35,res.data)
+      console.log(35,res)
       navigate(`/screen28/${pnumber}/${condition}/${lastRoundCumulativeComp}`)
       if(res.data.msg == 'Participant updated successfully'){
         navigate(`/screen28/${pnumber}/${condition}/${lastRoundCumulativeComp}`)
