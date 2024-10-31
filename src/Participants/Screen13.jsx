@@ -19,7 +19,7 @@ function Screen13() {
 
   const apicall = async () => {
     try{
-      const x = await axios.post(`${REACT_APP_BACKEND_URL}/generate/addworkertip`,{pnumber, currentround, tip, 'token': localStorage.getItem('token')},{
+      const x = await axios.post(`${REACT_APP_BACKEND_URL}/generate/addworkertip`,{pnumber, currentround, condition, tip, 'token': localStorage.getItem('token')},{
         withCredentials:true
       })
       console.log(26,x.data)
