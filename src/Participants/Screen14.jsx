@@ -591,7 +591,11 @@ function Screen14() {
                     justifyContent: "center",
                     alignItems: "center",
                   }}
-                  onClick={clickedNext}
+                  onClick={() => {
+                    if (effortlevel) {
+                      clickedNext(); 
+                    }
+                  }}
                 >
                   Next
                 </div>

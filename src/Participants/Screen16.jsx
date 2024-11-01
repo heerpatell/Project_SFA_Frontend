@@ -81,6 +81,7 @@ function Screen16() {
   }, []);
 
   const apicall = async () => {
+    console.log(84, condition)
     try{
       const x = await axios.post(`${REACT_APP_BACKEND_URL}/generate/addworkertip`,{pnumber, currentround, tip, 'token': localStorage.getItem('token')},{
         withCredentials:true
@@ -197,7 +198,7 @@ function Screen16() {
               >
 
 <div>Please make your choice: </div>
-                  <div style={{ color: "#cccccc" }}>
+                  <div style={{ color: "#1c1c1c" }}>
                     How much do you want to tip the Worker for their service?
                   </div>
                   <div>
@@ -244,7 +245,12 @@ function Screen16() {
                     justifyContent: 'center',
                     alignItems: 'center'    
                   }}
-                  onClick={clickedNext}
+                  onClick={() => {
+                    if (tip) {
+                      clickedNext(); 
+                    }
+                  }}
+                
                 >
                   Next
                 </div>
