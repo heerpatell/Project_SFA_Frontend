@@ -95,9 +95,8 @@ function Screen3() {
         }}>
           <div style={{ textAlign: 'center', fontSize: '2rem', color: '#1c1c1c' }}><u><b>YOUR ROLE</b></u></div>
           <div>In this study, you are assigned to the role of &nbsp;</div>
-          <div style={{ textAlign: 'center' }}><b>{assignedCategory}</b></div>
+          <div style={{ textAlign: 'center', fontSize:'2rem', textTransform:'capitalize'}}><b>{assignedCategory}</b></div>
           <div>Your role will remain unchanged throughout the study.</div>
-          <div>Please read and accept the terms.</div>
           
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
             <input
@@ -106,7 +105,7 @@ function Screen3() {
               onChange={handleCheckboxChange}
               style={{ marginRight: '0.5rem' }}
             />
-            I have read it properly. 
+            I understand that I have been assigned to the role of {assignedCategory} for the duration of this study.
           </label>
           
           <div style={{

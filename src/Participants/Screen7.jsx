@@ -13,7 +13,7 @@ function Screen7() {
   const [showPost, setShowPost] = useState(false);
 
   const clickedNext = () => {
-    navigate(`/screen8/${pnumber}/${condition}`);
+    navigate(`/screen63/${pnumber}/${condition}`);
   };
 
   const verifyUser = () => {
@@ -56,6 +56,7 @@ function Screen7() {
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
           display: "flex",
+          height:'100%',
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -63,6 +64,7 @@ function Screen7() {
         <div
           style={{
             width: "50rem",
+            height:'100%',
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
@@ -116,13 +118,6 @@ function Screen7() {
               However, Workers will be informed of the amount of the tip you pay them.
             </div>)
           }
-          <div style={{ color: "#1c1c1c", fontSize: "1.5rem"}}>
-            <b>End of Round Feedback</b>
-          </div>
-          <div>At the end of each round, all customers will receive feedback about <b><i>their own payoffs</i></b> and <b><i>the individual components</i></b> that are added to the sum of their payoffs in that round, as well as their own cumulative payoffs up to that round.</div>
-          <div>Similarly, at the end of each round, all workers will receive feedback about <b><i>their own compensation</i></b> and <b><i>the individual components</i></b> that are added to the sum of their compensation in that round, as well as their own cumulative compensation up to that round. </div>
-          <div>Next, you will take a short quiz to test your comprehension of the instructions. </div>
-
           <div>Please click ‘Next’ to continue.</div>
           <div
             style={{

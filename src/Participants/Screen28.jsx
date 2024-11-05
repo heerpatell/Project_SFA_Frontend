@@ -63,9 +63,9 @@ function Screen27() {
             <br/>
             <div style={{color:'#1c1c1c'}}>You have earned a total of {lastRoundCumulativeComp} tokens in today’s study. Your tokens will be converted into actual cash at the rate of 100 tokens = $0.90 CND. </div>
             <br/>
-            <div style={{color:'#1c1c1c'}}> Threfore, you have earned total of : {(lastRoundCumulativeComp * 0.009).toFixed(2)}</div>
+            <div style={{color:'#1c1c1c'}}> <b>Therefore, you have earned total of : ${(lastRoundCumulativeComp * 0.009).toFixed(2)}</b></div>
             <br/>
-            <div style={{color:'#1c1c1c'}}>Please be patient and remain seated until the experimainter announces the end of study.</div>
+            <div style={{color:'#1c1c1c'}}>Please be patient and remain seated until the experimenter announces the end of study.</div>
             <br/>
         </div>           
         </div>

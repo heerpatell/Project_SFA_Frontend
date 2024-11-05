@@ -33,7 +33,7 @@ function Screen14() {
     if (
         value === "" || 
         !regex.test(value) || 
-        floatValue < 0 || 
+        floatValue <= 0 || 
         floatValue > 1 ||
         (floatValue % 0.1 !== 0 && floatValue * 10 % 1 !== 0) // Check increments of 0.1
     ) {
@@ -222,6 +222,7 @@ function Screen14() {
           style={{
             width: "58rem",
             display: "flex",
+            height:'100%',
             flexDirection: "column",
             gap: "1.4rem",
             fontSize: "1.4rem",
@@ -235,7 +236,14 @@ function Screen14() {
             }}
           >
             <u style={{ textTransform: "uppercase" }}>
-              <b>WORKER EFFORT CHOICE &nbsp;|&nbsp; ROUND {currentround}</b>
+            {
+              (currentround == 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; {currentround}</b></u>
+              )
+              (currentround != 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; ROUND {currentround}</b></u>
+              )
+            }
             </u>
             <div
               style={{
@@ -266,7 +274,7 @@ function Screen14() {
                 }}
               >
                 <div>
-                  Possible effort levels and their associated costs are shown in
+                  Possible effort levels and their associated costs are shown in{" "}
                   the table below.{" "}
                 </div>
                 <div>
@@ -307,7 +315,7 @@ function Screen14() {
                         <td>Cost (Tokens)</td>
                         <td>0</td>
                         <td>
-                          <i>5</i>
+                          5
                         </td>
                         <td>10</td>
                         <td>20</td>
@@ -324,13 +332,13 @@ function Screen14() {
                 <div>
                   Importantly,{" "}
                   <b>
-                    Customers’ level of satisfaction with your service increases
+                    Customers’ level of satisfaction with your service increases{" "}
                     with your effort level.
                   </b>{" "}
-                  The higher the effort level you choose, the <b>higher</b> the
-                  Customers’ level of satisfaction. At the end of this study,
-                  Customers’ satisfaction will determine their compensation. The
-                  higher the Customers’ satisfaction, the higher the
+                  The higher the effort level you choose, the <b>higher</b> the{" "}
+                  Customers’ level of satisfaction. At the end of this study,{" "}
+                  Customers’ satisfaction will determine their compensation. The{" "}
+                  higher the Customers’ satisfaction, the higher the{" "}
                   compensation they will receive.
                 </div>
               </div>
@@ -344,7 +352,7 @@ function Screen14() {
                 <b>Compensation</b>
               </div>
               <div>
-                As Worker, recall, your compensation in this round is calculated
+                As a Worker, recall, your compensation in this round is calculated{" "}
                 as follows:
               </div>
               {showFC && (
@@ -356,16 +364,16 @@ function Screen14() {
                   }}
                 >
                   <div style={{ textAlign: "center" }}>
-                    Compensation = Wage Paid by the Restaurant – Cost of Effort
+                    Compensation = Wage Paid by the Restaurant – Cost of Effort{" "}
                     Level
                   </div>
                   <div>
                     In each round, you will be paid{" "}
-                    <b>a fixed wage of 200 tokens</b> by the restaurant. Please
-                    note that this fixed wage is <b>higher</b> than the standard
+                    <b>a fixed wage of 200 tokens</b> by the restaurant. Please{" "}
+                    note that this fixed wage is <b>higher</b> than the standard{" "}
                     wage at similar restaurants. As a result, Customers will{" "}
                     <b>
-                      <i>not</i>
+                      not
                     </b>{" "}
                     pay you additional compensation for serving them.
                   </div>
@@ -388,16 +396,11 @@ function Screen14() {
                   </div>
                   <div>
                     In each round, you will be paid{" "}
-                    <b>a fixed wage of 160 tokens</b>
-                    by the restaurant. Please note that this fixed wage is the
-                    <b>standard</b> wage paid at similar restaurants. In
-                    addition, Customers pay you a <b>service charge</b> of{" "}
-                    <b>40 tokens</b> for serving them, which you receive as
-                    additional compensation.{" "}
+                    <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the <b>standard</b> wage paid at similar restaurants. In addition, Customers pay you a <b>service charge</b> of{" "} <b>40 tokens</b> for serving them, which you receive as additional compensation.{" "}
                   </div>
                   <div>
                     Please note that Customers will pay you a <b>fixed</b>{" "}
-                    amount of 40 tokens in each round, regardless of how you
+                    amount of 40 tokens in each round, regardless of how you{" "}
                     serve them.
                   </div>
                   {/*                   <div>
@@ -422,17 +425,17 @@ function Screen14() {
                   <div>
                     In each round, you will be paid{" "}
                     <b>a fixed wage of 160 tokens</b>
-                    by the restaurant. Please note that this fixed wage is the
-                    <b>standard</b> wage paid at similar restaurants. In
-                    addition, Customers pay you <b>tips</b> for serving them,
+                    by the restaurant. Please note that this fixed wage is the{" "}
+                    <b>standard</b> wage paid at similar restaurants. In{" "}
+                    addition, Customers pay you <b>tips</b> for serving them,{" "}
                     which you receive as additional compensation.{" "}
                   </div>
                   <div>
-                    Please note that Customers will decide how much to tip you
+                    Please note that Customers will decide how much to tip you{" "}
                     in each round. The amount of tip can range from{" "}
-                    <b>zero up to 80 tokens.</b> That is, Customers can tip
-                    nothing, can tip a maximum of 80 tokens, or can tip anywhere
-                    in between. Importantly, Customers tip you <b>before</b> you
+                    <b>zero up to 80 tokens.</b> That is, Customers can tip{" "}
+                    nothing, can tip a maximum of 80 tokens, or can tip anywhere{" "}
+                    in between. Importantly, Customers tip you <b>before</b> you{" "}
                     serve them.{" "}
                   </div>
                 </div>
@@ -451,22 +454,22 @@ function Screen14() {
                   </div>
                   <div>
                     In each round, you will be paid{" "}
-                    <b>a fixed wage of 160 tokens</b>
-                    by the restaurant. Please note that this fixed wage is the
-                    <b>standard</b> wage paid at similar restaurants. In
-                    addition, Customers pay you <b>tips</b> for serving them,
-                    which you receive as additional compensation.
+                    <b>a fixed wage of 160 tokens</b>{" "}
+                    by the restaurant. Please note that this fixed wage is the{" "}
+                    <b>standard</b> wage paid at similar restaurants. In{" "}
+                    addition, Customers pay you <b>tips</b> for serving them,{" "}
+                    which you receive as additional compensation.{" "}
                   </div>
                   <div>
-                    In each round, you will be paid a fixed wage of 160 tokens
-                    by the restaurant. Please note that this fixed wage is the
-                    standard wage paid at similar restaurants. In addition,
-                    Customers pay you tips for serving them, which you receive
-                    as additional compensation. Please note that Customers will
-                    decide how much to tip you in each round. The amount of tip
-                    can range from <b>zero up to 80 tokens.</b> That is,
-                    Customers can tip nothing, can tip a maximum of 80 tokens,
-                    or can tip anywhere in between. Importantly, Customers tip
+                    In each round, you will be paid a fixed wage of 160 tokens{" "}
+                    by the restaurant. Please note that this fixed wage is the{" "}
+                    standard wage paid at similar restaurants. In addition,{" "}
+                    Customers pay you tips for serving them, which you receive{" "}
+                    as additional compensation. Please note that Customers will{" "}
+                    decide how much to tip you in each round. The amount of tip{" "}
+                    can range from <b>zero up to 80 tokens.</b> That is,{" "}
+                    Customers can tip nothing, can tip a maximum of 80 tokens,{" "}
+                    or can tip anywhere in between. Importantly, Customers tip{" "}
                     you <b>after</b> you serve them.
                   </div>
                   {/*                   <div>
@@ -496,8 +499,8 @@ function Screen14() {
                     }}
                   >
                     <div>
-                      In this round, the Customer that you are paired with has
-                      chosen to tip you:
+                      In this round, the Customer that you are paired with has{" "}
+                      chosen to tip you: <div style={{fontSize:'2rem'}}><b>{tip}</b></div>
                     </div>
                     <div>Tip Paid to the Worker: {tip}</div>
                   </div>
@@ -522,7 +525,7 @@ function Screen14() {
                   }}
                 >
                   <div>
-                    As a Worker, you can choose an effort level between 0.1 and
+                    As a Worker, you can choose an effort level between 0.1 and{" "}
                     1.0 (inclusive).{" "}
                   </div>
                   <div>Please make your choice: </div>

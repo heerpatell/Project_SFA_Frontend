@@ -455,7 +455,11 @@ function Screen20() {
     let cumulativeComp = 0;
 
     if (currentround === "10") {
-      navigate(`/screen21/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+      if(condition === "Fixed Condition" || condition == "Service Charge"){
+        navigate(`/screen27/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+      }else{
+        navigate(`/screen21/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+      }
     } else {
       await axios
         .post(`${REACT_APP_BACKEND_URL}/generate/screen11reachedcountincrease`,{'token':localStorage.getItem('token')} ,{
@@ -484,8 +488,15 @@ function Screen20() {
               textAlign: "center",
             }}
           >
-            <u style={{textTransform:'capitalize'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
-          </div>
+            {
+          (currentround == 'Practice Round') && (
+            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | {currentround}</b></u>
+          )
+          (currentround != 'Practice Round') && (
+            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
+          )
+        }
+                     </div>
           <br/>
           <br/>
           {showFC && (
@@ -504,7 +515,7 @@ function Screen20() {
               <br/>
               <br/>
               <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
-                As Customer, you have earned a total of{" "}
+                As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
               <br/>
@@ -527,7 +538,7 @@ function Screen20() {
               <br/>
               <br/>
               <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
-                As Customer, you have earned a total of{" "}
+                As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
               <br/>
@@ -550,7 +561,7 @@ function Screen20() {
               <br/>
               <br/>
               <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
-                As Customer, you have earned a total of{" "}
+                As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
               <br/>
@@ -573,7 +584,7 @@ function Screen20() {
               <br/>
               <br/>
               <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
-                As Customer, you have earned a total of {lastRoundCumulativeComp} tokens
+                As a Customer, you have earned a total of {lastRoundCumulativeComp} tokens
                 in {currentround} round(s).
               </div>
               <br/>

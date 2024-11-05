@@ -94,7 +94,7 @@ function Screen0() {
             <br/>
             <div>
               {" "}
-              <b>Collaborating Researchers: </b>
+              <b>Collaborating Researchers: </b><br />
               <br />
               Wenqian Hu, University of Waterloo (w8hu@uwaterloo.ca)
               <br />
@@ -111,9 +111,11 @@ function Screen0() {
                 <u>DESCRIPTION OF THE RESEARCH</u>
               </b>
               <br />
+              <br />
               You are invited to participate in a research study about worker
               performance. Specifically, the purpose of the research is to
               understand worker performance in service organizations. <br />
+              <br />
               Your participation is entirely voluntary. This form includes
               detailed information on the research to help you decide whether to
               participate. Please read it carefully and ask any questions you
@@ -123,14 +125,14 @@ function Screen0() {
             <div>
             <b>
               <u>WHAT WILL MY PARTICIPATION INVOLVE?</u>
-            </b><br/>
+            </b><br/><br />
             If you decide to participate in this research study, then you will
             be randomly assigned to the role of either a customer or a worker in
             a service setting. Customers and workers will be paired together to
             form dyads. If you agree, you will then be able to continue with the
             study, which will be completed during one in-lab session and will
             last about 45 minutes.
-            <br />
+            <br /><br />
             You will be asked to read through a set of instructions, make
             decisions in your role as a customer or worker that may affect the
             other person in the dyad, and fill out a questionnaire. The
@@ -143,7 +145,7 @@ function Screen0() {
 <div>
 <b>
               <u>ARE THERE ANY RISKS TO ME?</u>
-            </b><br/>
+            </b><br/><br />
             We do not foresee any risks from participation in this research
             study beyond that of everyday activities. That means that the risks
             of participating are no more likely or serious than those you
@@ -153,7 +155,7 @@ function Screen0() {
             <div>
             <b>
               <u>ARE THERE ANY BENEFITS TO ME?</u>
-            </b><br/>
+            </b><br/><br />
             We do not expect any direct benefits to you from participation in
             this study.
             </div>
@@ -161,7 +163,7 @@ function Screen0() {
             <div>
             <b>
               <u>WILL I RECEIVE ANYTHING FOR MY PARTICIPATION? </u>
-            </b><br/>
+            </b><br/><br/>
             You will receive a 0.5% bonus mark in the SAF Behavioral Research
             System for completing this study. In the task, you will be randomly
             assigned to the role of a customer or worker and have the
@@ -174,7 +176,7 @@ function Screen0() {
             <div>
             <b>
               <u>CAN I WITHDRAW OR BE REMOVED FROM THE STUDY?</u>
-            </b><br/>
+            </b><br/><br/>
             Your participation in this research is voluntary. You may decline to
             answer any of the questions if you so wish by advancing to the next
             screen without completing the question(s). Further, you may decide
@@ -189,7 +191,7 @@ function Screen0() {
             <div>
             <b>
               <u>HOW WILL MY CONFIDENTIALITY BE PROTECTED?</u>
-            </b><br/>
+            </b><br/><br/>
             Your identity will be confidential and no identifiable information
             will be retained with your responses. The data resulting from your
             participation will be shared by the researchers on the project. The
@@ -210,7 +212,7 @@ function Screen0() {
             <br />
             <b>
               <u>WHOM SHOULD I CONTACT IF I HAVE QUESTIONS?</u>
-            </b><br/>
+            </b><br/><br/>
             <div>            You may ask any questions about the research at any time to the
             administrator or the Principal Investigator listed at the top of
             this form.</div>
@@ -224,6 +226,7 @@ function Screen0() {
             <b>
               <u>RESTRICTIONS</u>
             </b>
+            <br/>
 <div>            This study is restricted to individuals who are at least 18 years
 old.</div>
             <br />

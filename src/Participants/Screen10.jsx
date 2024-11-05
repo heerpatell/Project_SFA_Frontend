@@ -66,7 +66,7 @@ function Screen10() {
           >
             <b>Starting Page</b>
           </div>
-          <div style={{ fontSize: "1.2rem" }}>Let's start!.</div>
+          <div style={{ fontSize: "1.2rem" }}>Let's start!</div>
           <div style={{ fontSize: "1.2rem" }}>
               You have completed the practice round.
           </div>

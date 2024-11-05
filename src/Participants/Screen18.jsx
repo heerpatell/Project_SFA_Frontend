@@ -146,7 +146,17 @@ function Screen18() {
               textAlign: "center",
             }}
           >
-            <div style={{fontSize:'2rem'}}><u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u></div>
+            <div style={{fontSize:'2rem'}}>
+              
+            {
+                  (currentround == 'Practice Round') && (
+                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b></u>
+                  )
+                  (currentround != 'Practice Round') && (
+                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u>
+                  )
+                }
+              </div>
             <div
               style={{
                 fontSize: "1.2rem",
@@ -173,10 +183,10 @@ function Screen18() {
                         gap:'1.3rem'
                 }}>
                     <div>
-                        <div>1. Your base payoff: <b>60 tokens.</b></div>
+                        <div>1. Your base payoff: <b>60 tokens</b></div>
                         <div>2. Your satisfaction from Worker’s service: <b>{effort*200}</b></div>
                     </div>
-                    <div><b>Your total compensation in this round is: {60+(effort*200)} tokens.</b></div>
+                    <div><b>Your total compensation in this round is: {60+(effort*200)} tokens</b></div>
                 </div>
               }
 
@@ -188,10 +198,10 @@ function Screen18() {
                 }}>
                     <div>
                         1. Your base payoff: <b>60 tokens</b><br/>
-                        2. Your satisfaction from Worker’s service: <b>{effort*200} tokens.</b><br/>
+                        2. Your satisfaction from Worker’s service: <b>{effort*200} tokens</b><br/>
                         3. Service charge paid to the Worker: <b> 40 tokens</b>
                     </div>
-                    <div><b>Your total compensation in this round is: {60+(effort*200)-40} tokens.</b></div>
+                    <div><b>Your total compensation in this round is: {60+(effort*200)-40} tokens</b></div>
                 </div>
               }
               {
@@ -201,12 +211,12 @@ function Screen18() {
                     gap:'1.3rem'
                 }}>
                    <div>
-                   1. Your base payoff: <b>60 tokens.</b><br/>
-                   2. Your satisfaction from Worker’s service: <b>{effort*200} tokens</b>. <br/>
-                   3. Tip paid to the Worker: <b>{tip} tokens.</b>
+                   1. Your base payoff: <b>60 tokens</b><br/>
+                   2. Your satisfaction from Worker’s service: <b>{effort*200} tokens</b> <br/>
+                   3. Tip paid to the Worker: <b>{tip} tokens</b>
                    </div>
 
-                   <div><b>Your total compensation in this round is: {60+(effort*200)-tip} tokens.</b></div>
+                   <div><b>Your total compensation in this round is: {60+(effort*200)-tip} tokens</b></div>
                   </div>
               }
             </div>

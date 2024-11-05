@@ -62,7 +62,15 @@ useEffect(()=>{
               textAlign: "center",
             }}
           >
-            <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
+            <u style={{textTransform:'uppercase'}}><b></b></u>
+            {
+              (currentround == 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b></u>
+              )
+              (currentround != 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
+              )
+            }
           </div>
           <div style={{
             fontSize:'1.2rem',
@@ -71,7 +79,7 @@ useEffect(()=>{
             gap:'1rem',
             paddingTop:'2rem'
           }}>
-          <div>As Customer, recall, your payoff in this round is calculared as follows: </div>
+          <div>As a Customer, recall, your payoff in this round is calculated as follows: </div>
             <div style={{color:'#1c1c1c'}}>Payoff = 60 + Satisfaction from Worker's service - Tip paid to the Worker</div>
             <div>where,</div>
             <div style={{color:'#1c1c1c'}}>Satisfaction from Worker's Service = Worker Effort Level * 200</div>

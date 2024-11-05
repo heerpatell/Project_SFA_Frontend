@@ -122,7 +122,14 @@ function Screen13() {
               textAlign: "center",
             }}
           >
-            <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION | ROUND {currentround}</b></u>
+            {
+              (currentround == 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION | {currentround}</b></u>
+              )
+              (currentround != 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION | ROUND {currentround}</b></u>
+              )
+            }
           </div>
           <div
             style={{
@@ -133,17 +140,16 @@ function Screen13() {
             }}
           >
             <div>
-              As Customer, you now need to{" "}
-              <i>decide how much to tip the Worker.</i>{" "}
+              As a Customer, you now need to{" "}
+              decide how much to tip the Worker.{" "}
             </div>
             <div>
               You need to decide how much to tip the Worker for their service{" "}
-              <i>before</i> they serve you. The amount of tip can range from
+              before they serve you. The amount of tip can range from
               zero up to 80 tokens (rounded to the nearest whole number). The
-              Worker will be informed of the tip you pay <i>before</i> they make
+              Worker will be informed of the tip you pay before they make
               their choice of effort level.
             </div>
-            <div>Please make your choice: </div>
             <div style={{ color: "#1c1c1c" }}>
               <b>How much do you want to tip the Worker for their service?</b>
             </div>

@@ -117,7 +117,16 @@ return (
               fontSize: "1.5rem",
               textAlign: "center",
             }}>
-              <div style={{fontSize:'2rem'}}><u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u></div>
+              <div style={{fontSize:'2rem'}}>
+                {
+                  (currentround == 'Practice Round') && (
+                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b></u>
+                  )
+                  (currentround != 'Practice Round') && (
+                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u>
+                  )
+                }
+                </div>
               <div style={{
                 fontSize: "1.2rem",
                 display: "flex",
@@ -141,10 +150,10 @@ return (
                     }}>
                        <div>
                        <div>1. Your wage paid by the restaurant: <b>200 tokens </b></div>
-                       <div>2. Your cost of effort level: <b>{cost} tokens.</b></div>
+                       <div>2. Your cost of effort level: <b>{cost} tokens</b></div>
                        </div>
 
-                       <div><b>Your total compensation in this round is: {200-cost} tokens.</b></div>
+                       <div><b>Your total compensation in this round is: {200-cost} tokens</b></div>
                         </div>
                 }
                 {
@@ -156,10 +165,10 @@ return (
                        <div>
                        1. Your wage paid by the restaurant: <b>160 tokens</b><br/>
                        2. Service charge paid by the Customer: <b>40 tokens</b> <br/>
-                       3. Your cost of effort level: <b>{cost} tokens.</b>
+                       3. Your cost of effort level: <b>{cost} tokens</b>
                        </div>
 
-                       <div><b>Your total compensation in this round is: {160+40-cost} tokens.</b></div>
+                       <div><b>Your total compensation in this round is: {160+40-cost} tokens</b></div>
                         </div>
                 }
                 {
@@ -170,11 +179,11 @@ return (
                     }}>
                        <div>
                        1. Your wage paid by the restaurant: <b>160 tokens </b><br/>
-                       2. Tip paid by the Customer: <b>{tip} tokens.</b><br/>
-                       3. Your cost of effort level: <b>{cost} tokens.</b>
+                       2. Tip paid by the Customer: <b>{tip} tokens</b><br/>
+                       3. Your cost of effort level: <b>{cost} tokens</b>
                        </div>
 
-                       <div><b>Your total compensation in this round is: {160+tip-cost} tokens.</b></div>
+                       <div><b>Your total compensation in this round is: {160+tip-cost} tokens</b></div>
                         </div>
                 }
                               <div

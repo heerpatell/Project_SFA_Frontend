@@ -147,7 +147,16 @@ function Screen16() {
               textAlign: "center",
             }}
           >
-            <div style={{color:'#1c1c1c', textTransform:'uppercase', fontSize:'2rem'}}><u><b>TIPPING DECISION &nbsp;|&nbsp; ROUND {currentround}</b></u></div>
+            <div style={{color:'#1c1c1c', textTransform:'uppercase', fontSize:'2rem'}}>
+            {
+              (currentround == 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION &nbsp;|&nbsp; {currentround}</b></u>
+              )
+              (currentround != 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION &nbsp;|&nbsp; ROUND {currentround}</b></u>
+              )
+            }
+            </div>
             <div
               style={{
                 fontSize: "1.2rem",
@@ -160,7 +169,7 @@ function Screen16() {
               }}
             >
               <div>
-                As Customer, you now need to decide how much to tip the Worker.
+                As a Customer, you now need to decide how much to tip the Worker.
               </div>
               <div>
                 You need to decide how much to tip the Worker for their service
@@ -196,8 +205,6 @@ function Screen16() {
                   gap: "1rem",
                 }}
               >
-
-<div>Please make your choice: </div>
                   <div style={{ color: "#1c1c1c" }}>
                     How much do you want to tip the Worker for their service?
                   </div>

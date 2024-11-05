@@ -66,9 +66,9 @@ function QuestionScale({ question, name, onChange }) {
         ))}
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '0.2rem', color: '#1c1c1c', fontSize: '1rem', paddingBottom: '0.5rem' }}>
-        <div><i>Not at all</i></div>
-        <div><i>Somewhat</i></div>
-        <div><i>Very much</i></div>
+        <div>Not at all</div>
+        <div>Somewhat</div>
+        <div>Very much</div>
       </div>
       <hr />
     </div>

@@ -553,7 +553,18 @@ function Screen19() {
       <div
         style={{ textAlign: "center", fontSize: "2rem", paddingBottom: "1rem" }}
       >
-        <u style={{textTransform:'capitalize'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
+        <u style={{textTransform:'capitalize'}}>
+        <b>
+        {
+          (currentround == 'Practice Round') && (
+            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | {currentround}</b></u>
+          )
+          (currentround != 'Practice Round') && (
+            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
+          )
+        }
+          </b>
+        </u>
       </div>
       <br/>
       <br/>

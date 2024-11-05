@@ -81,7 +81,7 @@ const clickedNext = async () => {
         }}> 
             <div style={{fontSize:'2rem' ,color:'#1c1c1c', textAlign:'center'}}><u><b>WORKER COMPENSATION</b></u></div>
             <div style={{fontSize:'1.5rem', color:'#1c1c1c'}}><b>Your Task</b></div>
-            <div>In each round, you will choose an effort level to serve the Customers. Possible effort levels and their associated costs are shown in the table below. You may choose an effort level between 0.1 and 1.0 (inclusive). The higher the effort level you choose, the higher the cost of your effort. </div>
+            <div>In each round, you will choose an effort level to serve the Customer. Possible effort levels and their associated costs are shown in the table below. You may choose an effort level between 0.1 and 1.0 (inclusive). The higher the effort level you choose, the higher the cost of your effort. </div>
             <div style={{
                 margin: '1rem'
             }}>
@@ -115,7 +115,7 @@ const clickedNext = async () => {
           }}>
             <td>Cost (Tokens)</td>
             <td>0</td>
-            <td><i>5</i></td>
+            <td>5</td>
             <td>10</td>
             <td>20</td>
             <td>30</td>
@@ -139,7 +139,7 @@ const clickedNext = async () => {
                     gap:'1.4rem'
                  }}>
                     <div>Compensation of Worker = Wage Paid by the Restaurant - cost of effort level</div>
-                    <div>In each round, Workers will be paid <b>a fixed wage of 200 tokens</b> by the restaurant. Please note that this fixed wage is <b>higher</b> than the standard wage at similar restaurants. As a result, Customers will <b>not</b> pay Workers additional compensation for serving them.</div>
+                    <div>In each round, you will be paid <b>a fixed wage of 200 tokens</b> by the restaurant. Please note that this fixed wage is <b>higher</b> than the standard wage at similar restaurants. As a result, Customers will <b>not</b> pay you additional compensation for serving them.</div>
                  </div>)
              }
             {
@@ -150,7 +150,7 @@ const clickedNext = async () => {
                     gap:'1.4rem'
                  }}>
                    <div>Compensation of Worker = Wage Paid by the Restaurant + Service Charge – Cost of Effort Level</div>
-                    <div>In each round, Workers will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay a <b>service charge</b> of <b>40 tokens</b> to Workers for serving them, which Workers receive as additional compensation. Please note that Customers will pay a <b>fixed</b> amount of 40 tokens to Workers in each round, regardless of how Workers serve them.</div>
+                    <div>In each round, you will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay a <b>service charge</b> of <b>40 tokens</b> to you for serving them, which you receive as additional compensation. Please note that Customers will pay a <b>fixed</b> amount of 40 tokens to you in each round, regardless of how you serve them.</div>
                 </div>)
             }
             {
@@ -161,8 +161,8 @@ const clickedNext = async () => {
                     gap:'1.4rem'
                  }}>
                    <div>Compensation of Worker = Wage Paid by the Restaurant + Customer Tip – Cost of Effort Level</div>
-                   <div>In each round, Workers will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay Workers <b>tips</b> for serving them, which Workers receive as additional compensation. </div>
-                    <div>Please note that Customers will decide how much to tip the Workers in each round. The amount of tip can range from <b>zero up to 80 tokens</b>. That is, Customers can tip nothing to the Workers, can tip a maximum of 80 tokens to the Workers, or can tip anywhere in between. Importantly, Customers tip Workers <b>before</b> the Workers serve them. </div>
+                   <div>In each round, you will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay you <b>tips</b> for serving them, which you receive as additional compensation. </div>
+                    <div>Please note that Customers will decide how much to tip you in each round. The amount of tip can range from <b>zero up to 80 tokens</b>. That is, Customers can tip nothing to you, can tip a maximum of 80 tokens to you, or can tip anywhere in between. Importantly, Customers tip you <b>before</b> you serve them. </div>
                 </div>)
             }
             {
@@ -173,8 +173,8 @@ const clickedNext = async () => {
                     gap:'1.4rem'
                  }}>
                    <div>Compensation of Worker = Wage Paid by the Restaurant + Customer Tip – Cost of Effort Level</div>
-                    <div>In each round, Workers will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay Workers <b>tips</b> for serving them, which Workers receive as additional compensation. </div>
-                    <div>Please note that Customers will decide how much to tip the Workers in each round. The amount of tip can range from <b>zero up to 80 tokens</b>. That is, Customers can tip nothing to the Workers, can tip a maximum of 80 tokens to the Workers, or can tip anywhere in between. Importantly, Customers tip Workers <b>after</b> the Workers serve them.  </div>
+                    <div>In each round, you will be paid <b>a fixed wage of 160 tokens</b> by the restaurant. Please note that this fixed wage is the standard wage paid at similar restaurants. In addition, Customers pay you <b>tips</b> for serving them, which you receive as additional compensation. </div>
+                    <div>Please note that Customers will decide how much to tip you in each round. The amount of tip can range from <b>zero up to 80 tokens</b>. That is, Customers can tip nothing to you, can tip a maximum of 80 tokens to you, or can tip anywhere in between. Importantly, Customers tip you <b>after</b> you serve them.  </div>
                 </div>)
             }
 

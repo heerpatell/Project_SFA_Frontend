@@ -54,6 +54,7 @@ const [showPost, setShowPost] = useState(false)
         style={{
           backgroundColor: "aliceblue",
           padding:'3.5rem',
+          height:'100%',
           color: "#1c1c1c",
           display: "flex",
             flexDirection: "column",
@@ -64,6 +65,7 @@ const [showPost, setShowPost] = useState(false)
         <div
           style={{
             width:'50rem',
+            height:'100%',
             display: "flex",
             flexDirection: "column",
             gap:'1.4rem'
@@ -99,7 +101,7 @@ const [showPost, setShowPost] = useState(false)
                             <div style={{textAlign:'center'}}>Payoff = 60 + Satisfaction from Worker’s Service</div>
                             <div style={{textAlign:'center'}}>where, Satisfaction from Worker’s Service = Worker Effort Level * 200</div>
                             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service, which is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. </div>
-                            <div>The worker’s effort level can range from 1 to 10. That is, the Worker can provide a minimum effort level of 1, a maximum effort level of 10, or anywhere in between.</div>
+                            <div>The worker’s effort level can range from 0.1 to 1. That is, the Worker can provide a minimum effort level of 0.1, a maximum effort level of 1, or anywhere in between.</div>
                             <div>For example, suppose the Worker you are paired with chooses an effort level of 0.6. The payoff for you in this round will be 60 + 0.6*200 = 180 tokens. </div>
                         </div>
                     )
@@ -166,12 +168,12 @@ const [showPost, setShowPost] = useState(false)
                 }
                 {
                   showPre && (
-                    <div>However, the tip you pay the Workers increases the Workers’ compensation. The higher the tip, the higher the compensation they will receive.</div>
+                    <div>However, the tip you pay the Worker increases the Workers’ compensation. The higher the tip, the higher the compensation they will receive.</div>
                   )
                 }
                 {
                   showPost && (
-                    <div>However, the tip you pay the Workers increases the Workers’ compensation. The higher the tip, the higher the compensation they will receive.</div>
+                    <div>However, the tip you pay the Worker increases the Workers’ compensation. The higher the tip, the higher the compensation they will receive.</div>
                   )
                 }
             </div>

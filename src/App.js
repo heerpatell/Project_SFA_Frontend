@@ -35,6 +35,9 @@ import Screen25 from './Participants/Screen25';
 import Screen27 from './Participants/Screen27';
 import Screen28 from './Participants/Screen28';
 import Waiting from './Participants/Waiting';
+import Screen62 from './Participants/Screen62';
+import Screen63 from './Participants/Screen63';
+import Screen25c from './Participants/Screen25c';
 
 function App() {
   return (
@@ -51,6 +54,8 @@ function App() {
       <Route exact path='/screen4/:pnumber/:condition' element={<Screen4/>}/>
       <Route exact path='/screen5/:pnumber/:condition' element={<Screen5/>}/>
       <Route exact path='/screen6/:pnumber/:condition' element={<Screen6/>}/>
+      <Route exact path='/screen62/:pnumber/:condition' element={<Screen62/>}/>
+      <Route exact path='/screen63/:pnumber/:condition' element={<Screen63/>}/>
       <Route exact path='/screen7/:pnumber/:condition' element={<Screen7/>}/>
       <Route exact path='/screen8/:pnumber/:condition' element={<Screen8/>}/>
       <Route exact path='/screen9/:pnumber/:condition' element={<Screen9/>}/>
@@ -70,6 +75,7 @@ function App() {
       <Route exact path='/screen23/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen23/>}/>
       <Route exact path='/screen24/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen24/>}/>
       <Route exact path='/screen25/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen25/>}/>
+      <Route exact path='/screen25c/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen25c/>}/>
       <Route exact path='/screen26/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen26/>}/>
       <Route exact path='/screen27/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen27/>}/>
       <Route exact path='/screen28/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen28/>}/>

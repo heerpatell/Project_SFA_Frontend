@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 const REACT_APP_BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-function Screen6() {
+function Screen62() {
   const { pnumber, condition } = useParams();
 
   const verifyUser = () => {
@@ -29,7 +29,7 @@ function Screen6() {
   const [showPost, setShowPost] = useState(false);
 
   const clickedNext = () => {
-    navigate(`/screen62/${pnumber}/${condition}`)
+    navigate(`/screen8/${pnumber}/${condition}`)
   }
   useEffect(() => {
     verifyUser()
@@ -75,45 +75,7 @@ function Screen6() {
           display:'flex',
           flexDirection:'column',
           gap:'1.3rem'
-        }}>
-          {showFC && (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.5rem",
-              }}
-            >
-              <div>In each round, <b>after</b> you choose your effort level, you will be informed of your compensation in that round. </div>
-            </div>
-          )}
-          {showSC && <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-          }}
-          >
-              <div>In each round, after you choose your effort level, you will be informed of your compensation in that round. </div>
-            </div>}
-            {
-              showPre && <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.6rem",
-              }}
-              >
-                <div>In each round, before you choose your effort level, you will be informed of how much the Customer you are paired with has chosen to tip you. Then, after you make your choice of effort level, you will be informed of your compensation in that round.</div>
-              </div>
-            }
-            {
-              showPost && <div>
-                  <div>In each round, after you choose your effort level, you will be informed of how much the Customer you are paired with has chosen to tip you. You will also be informed of your compensation in that round.</div>
-                </div>
-            }
-            <div>Please note that Customers will be informed of your chosen effort levels in each round. However, Customers will not know the cost associated with your effort levels, how much you are paid by the restaurant, or your total compensation. In other words, Customers will <b>only</b> know how much effort you choose to serve them. </div>
-             
+        }}>             
              <div style={{color:'#1c1c1c', fontSize:'1.5rem'}}><b>End of Round Feedback</b></div>
              <div>At the end of each round, all workers will receive feedback about <b>their own compensation</b> and <b> the individual components</b> that are added to the sum of their compensation in that round, as well as their own cumulative compensation up to that round. </div>
              <div>Similarly, at the end of each round, all customers will receive feedback about <b>their own payoffs</b> and <b>the individual components</b> that are added to the sum of their payoffs in that round, as well as their own cumulative payoffs up to that round.</div>
@@ -151,4 +113,4 @@ function Screen6() {
   );
 }
 
-export default Screen6;
+export default Screen62;

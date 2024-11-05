@@ -32,10 +32,9 @@ function Screen2() {
   },[])
   return (
     <>
-    <div>
         <div style={{
           backgroundColor:'aliceblue',
-          height:'100vh',
+          height:'100%',
           padding:'2rem 0',
           color:'#1c1c1c',
             display:'flex',
@@ -84,7 +83,7 @@ function Screen2() {
           </div>
             </div>
         </div>
-    </div>
+
     </>
   )
 }

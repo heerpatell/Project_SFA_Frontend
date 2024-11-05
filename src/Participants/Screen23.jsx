@@ -106,8 +106,17 @@ function Screen23() {
       .post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen23`, { pnumber, 'token': localStorage.getItem('token'), condition, ...responses }, {
         withCredentials: true,
       })
-      .then(() => {
-        navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+      .then(async() => {
+        await axios.post(`${REACT_APP_BACKEND_URL}/generate/getassignedcategory`,{pnumber, 'token': localStorage.getItem('token')},{
+          withCredentials:true
+        })
+        .then((res)=>{
+          if(res.data.assignedCategory == 'Worker'){
+            navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+          }else{
+            navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+          }
+        })
       })
       .catch((error) => {
         console.error("Error saving responses", error);
@@ -180,12 +189,12 @@ function Screen23() {
           {showTipQuestions && (
             <>
               <QuestionScale
-                question="To what extent do you perceive that the tip you received from the Customer was affected by your effort level?"
+                question="To what  do you perceive that the tip you received from the Customer was affected by your effort level?"
                 name="TipReason_Effort"
                 onChange={(value) => handleScaleChange("TipReason_Effort", value)}
               />
               <QuestionScale
-                question="To what do you perceive that the tip you received from the Customer was affected by the social pressure to tip?"
+                question="To what extent do you perceive that the tip you received from the Customer was affected by the social pressure to tip?"
                 name="TipReason_SocialImage"
                 onChange={(value) => handleScaleChange("TipReason_SocialImage", value)}
               />

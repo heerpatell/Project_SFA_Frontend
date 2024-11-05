@@ -108,7 +108,7 @@ function Screen8() {
             question: 'Workers’ compensation will be paid by:',
             options: ['Only the Customer', 'Only the restaurant', 'Both the Customer and the restaurant'],
             correctAnswer: condition === 'Fixed Condition' ? 'Only the restaurant' : 'Both the Customer and the restaurant',
-            errorMessage: 'Your selection is incorrect. Workers’ compensation is paid by the RESTAURANT.',
+            errorMessage: condition === 'Fixed Condition' ? 'Your selection is incorrect. Workers’ compensation is paid by the RESTAURANT.': 'Your selection is incorrect. Workers’ compensation is paid by BOTH the Customer and the restaurant.'
         },
         {
             question: 'Customers can decide how much to pay the Workers for serving them.',
@@ -140,7 +140,7 @@ function Screen8() {
             errorMessage: 'Your selection is incorrect. The Customer will only learn Worker’s choice of EFFORT LEVEL to serve the Customer. They will NOT learn Worker’s cost of effort level or Worker’s compensation.',
         },
         {
-            question: 'In each round, Workers will be informed of.',
+            question: 'In each round, Workers will be informed of',
             options: [
                 'Customers’ level of satisfaction with the service',
                 'How much Customers tip the Workers',
@@ -250,6 +250,7 @@ function Screen8() {
                                             />{' '}
                                             <label>True</label>
                                         </div>
+                                        <br/>
                                         <div>
                                             <input
                                                 type="radio"

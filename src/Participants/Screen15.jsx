@@ -95,7 +95,14 @@ function Screen15() {
             }}
           >
             <div style={{ paddingBottom: "1.3rem", fontSize: '2rem' }}>
-              <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
+            {
+              (currentround == 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b></u>
+              )
+              (currentround != 'Practice Round') && (
+                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
+              )
+            }
             </div>
             <div
               style={{
@@ -108,7 +115,7 @@ function Screen15() {
               }}
             >
               <div>
-                As Customer, recall, your payoff in this round is calculated as
+                As a Customer, recall, your payoff in this round is calculated as
                 follows:{" "}
               </div>
               {showFC && (
@@ -250,14 +257,14 @@ function Screen15() {
                   gap: "1.2rem",
                 }}
               >
-                <div style={{ color: "#1c1c1c" }}>Worker Effort Level</div>
+                <div style={{ color: "#1c1c1c", fontSize:'1.8rem' }}><b>Worker Effort Level</b></div>
                 <div>
                   In this round, the Worker that you are paired with has chosen
                   the effort level:
                 </div>
                 <div>
                   <b>Worker Effort Level:{" "}
-                  <span style={{ color: "#1c1c1c" }}>{effort}</span></b>
+                  <span style={{ color: "#1c1c1c", fontSize:'2rem' }}><b>{effort}</b></span></b>
                 </div>
               </div>
 
