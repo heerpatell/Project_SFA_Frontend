@@ -41,18 +41,18 @@ function Screen1() {
       alignItems:'center',
       height:'100vh',
       textAlign:'center',
-      fontSize:'1.3rem'
+      fontSize:'1.8rem'
     }}>
         <div style={{
             display:'flex',
             flexDirection:'column',
-            gap:'1.3rem'
+            gap:'1.8rem'
         }}>
             <div style={{
               width:'50rem',
               textAlign:'left'
             }}>
-            <div style={{padding:'1.5rem 0', fontSize:'2rem', color:'#1c1c1c', textAlign:'center'}}><u><b>INTRODUCTION</b></u></div>
+            <div style={{padding:'1.5rem 0', fontSize:'3rem', color:'#1c1c1c', textAlign:'center'}}><u><b>INTRODUCTION</b></u></div>
             {/* <div style={{padding:'0.5rem 0'}}>Welcome to this study!</div> */}
             <div style={{padding:'0.5rem 0'}}>
             This study involves decision making in groups. The amount of money you will earn depends on the decisions that you and others make. Please read all instructions carefully.
@@ -77,7 +77,7 @@ function Screen1() {
                 width: '5rem',
                 borderRadius: '0.2rem',
                 height: '3rem',
-                fontSize: '1.4rem',
+                fontSize: '1.8rem',
                 color: 'black',
                 backgroundColor: '#1c1c1c',
                 color:'aliceblue',
