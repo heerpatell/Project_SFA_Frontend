@@ -66,6 +66,7 @@ function Screen0() {
     setConsent(event.target.value);
     setIsConsentSelected(true);
   };
+
   return (
     <>
       <div className="participant-info-outer">

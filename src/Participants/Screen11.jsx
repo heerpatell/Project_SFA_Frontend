@@ -13,6 +13,7 @@ function Screen11() {
   const [participantCount, setParticipantCount] = useState(0); // Track participants count
   const [hasEmitted, setHasEmitted] = useState(false); // Track if event has been emitted
   const [updatedCurrentRound, setUpdatedCurrentRound] = useState();
+  const [showLine, setShowLine] = useState(false)
   let { pnumber, condition, activeatpg11 } = useParams();
   activeatpg11 = Number(activeatpg11);
 
@@ -80,6 +81,7 @@ function Screen11() {
       );
       if (roundRes.data.currentRound == "0") {
         roundRes.data.currentRound = "Practice Round";
+        setShowLine(true)
       }
 
       if (categoryRes.data.assignedCategory === "Customer") {
@@ -155,7 +157,7 @@ function Screen11() {
 
           {/* <div>Your arrival count: {activeatpg11}</div> */}
           <br />
-          <div><b>Reminder: You wll be paired with a different participant in the next round.</b></div>
+          {showLine && <div><b>Reminder: You will be paired with a different participant in the next round.</b></div>}
           {/* <div>Participants reached Screen11: {participantCount}</div>  */}
         </div>
       </div>
