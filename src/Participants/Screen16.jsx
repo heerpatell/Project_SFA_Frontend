@@ -213,7 +213,7 @@ function Screen16() {
                   <div>
                     <input
                       style={{
-                        width: "9rem",
+                        width: "11rem",
                         border: "none",
                         outline: "none",
                         backgroundColor: "transparent",

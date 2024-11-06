@@ -145,7 +145,7 @@ function Screen27() {
                   type="text"
                   value={gender === "Self-Define" ? gender : ""}
                   onChange={(e) => setGender(e.target.value)}
-                  style={{ marginLeft: "0.5rem", width: '20px', height: '20px', border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
+                  style={{ marginLeft: "0.5rem", width: '20px', height: '70px', border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
                 />
               </label>
               <label style={{ display: "block", marginBottom: "0.5rem" }}>
@@ -175,7 +175,7 @@ function Screen27() {
                 border: "1px solid #ccc",
                 backgroundColor: "white",
                 color: "#1c1c1c",
-                width: '20px', height: '20px'
+                width: '70px', height: '20px'
               }}
             />
           </div>
@@ -188,7 +188,7 @@ function Screen27() {
               onChange={handleWorkExperienceChange}
               min={0}
               style={{
-width: '20px', height: '20px',
+width: '70px', height: '20px',
 fontSize:'2.3rem',
                 padding: "0.5rem",
                 borderRadius: "5px",
@@ -208,7 +208,7 @@ fontSize:'2.3rem',
               onChange={handleFoodIndustryExperienceChange}
               min={0}
               style={{
-                width: '20px', height: '20px',
+                width: '70px', height: '20px',
                 fontSize:'2.3rem',
                 padding: "0.5rem",
                 borderRadius: "5px",
