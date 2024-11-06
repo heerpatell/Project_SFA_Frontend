@@ -497,7 +497,7 @@ function Screen19() {
           console.log(229, res.data);
 
           navigate(
-            `/screen11/${pnumber}/${condition}/${res.data.activeatpg11}`
+            `/screen11/${pnumber}/${condition}/${res.data.activeatpg11}/1`
           );
         });
     }
