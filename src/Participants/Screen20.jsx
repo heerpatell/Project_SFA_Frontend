@@ -406,7 +406,7 @@ function Screen20() {
   }, [condition]);
 
   const containerStyle = {
-    height: "100vh",
+    minHeight: "100vh",
     backgroundColor: "aliceblue",
     color: "#1c1c1c",
     display: "flex",
@@ -419,12 +419,12 @@ function Screen20() {
   const tableStyle = {
     width: "100%",
     borderCollapse: "collapse",
-    marginBottom: "1rem",
+    marginBottom: "1.5rem",
   };
 
   const thStyle = {
     border: "1px solid #1c1c1c",
-    padding: "0.5rem 1rem",
+    padding: "1rem 1.5rem",
     textAlign: "center",
     color:'aliceblue',
     opacity:'0.5',
@@ -433,7 +433,7 @@ function Screen20() {
 
   const tdStyle = {
     border: "1px solid #1c1c1c",
-    padding: "0.5rem 1rem",
+    padding: "1rem 1.5rem",
     textAlign: "center",
   };
 

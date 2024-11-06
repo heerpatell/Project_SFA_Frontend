@@ -146,6 +146,7 @@ function Screen23() {
     >
       <div
         style={{
+          height:'max-content',
           width: "100rem",
           display: "flex",
           flexDirection: "column",

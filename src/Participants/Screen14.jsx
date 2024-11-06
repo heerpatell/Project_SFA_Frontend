@@ -507,7 +507,6 @@ function Screen14() {
                   </div>
                 </div>
               )}
-              <br/>
               <div>
                 <div
                   style={{
@@ -582,7 +581,7 @@ function Screen14() {
               >
                 <div
                   style={{
-                    cursor: effortlevel ? "pointer" : "not-allowed",
+                    cursor: effortlevel >= 0.1 && effortlevel <= 1.0 ? "pointer" : "not-allowed",
                     opacity: effortlevel ? 1 : 0.5,
                     margin: "auto",
                     marginTop: "2rem",
@@ -599,6 +598,8 @@ function Screen14() {
                   onClick={() => {
                     if (effortlevel >= 0.1 && effortlevel <= 1.0) {
                       clickedNext(); 
+                    }else{
+                      alert('Please choose appropriate value!')
                     }              
                   }}
                 >

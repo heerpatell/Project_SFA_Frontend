@@ -256,10 +256,9 @@ function Screen0() {
                 <u>RESTRICTIONS</u>
               </b>
               <br />
-              <div>
+              <br />
                 This study is restricted to individuals who are at least 18
                 years old.
-              </div>
               <br />
               By agreeing to participate, you indicate that you are at least 18
               years old and voluntarily consent to participate in this study.

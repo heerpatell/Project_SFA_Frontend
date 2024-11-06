@@ -65,7 +65,7 @@ function Screen27() {
   return (
     <div
       style={{
-        height: "100vh",
+        minHeight: "100vh",
         backgroundColor: "aliceblue",
         color: "#1c1c1c",
         display: "flex",
@@ -76,6 +76,7 @@ function Screen27() {
     >
       <div
         style={{
+          height:'max-content',
           width: "100rem",
           display: "flex",
           flexDirection: "column",

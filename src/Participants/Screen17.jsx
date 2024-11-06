@@ -97,7 +97,7 @@ const finalMessageStyle = {
 return (
     <>
     <div style={{
-          height: "100vh",
+          minHeight: "100vh",
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
           display: "flex",
@@ -106,6 +106,7 @@ return (
           padding: "2rem",
         }}>
         <div style={{
+          height:'max-content',
             width: "100rem",
             display: "flex",
             flexDirection: "column",

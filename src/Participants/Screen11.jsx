@@ -81,6 +81,7 @@ function Screen11() {
       );
       if (roundRes.data.currentRound == "0") {
         roundRes.data.currentRound = "Practice Round";
+        console.log(84, showLine)
         setShowLine(true)
       }
 
@@ -121,7 +122,7 @@ function Screen11() {
   return (
     <div
       style={{
-        height: "100vh",
+        minHeight: "100vh",
         backgroundColor: "aliceblue",
         color: "#1c1c1c",
         display: "flex",
@@ -131,6 +132,7 @@ function Screen11() {
     >
       <div
         style={{
+          height:'max-content',
           width: "100rem",
           display: "flex",
           flexDirection: "column",
@@ -157,7 +159,7 @@ function Screen11() {
 
           {/* <div>Your arrival count: {activeatpg11}</div> */}
           <br />
-          {showLine && <div><b>Reminder: You will be paired with a different participant in the next round.</b></div>}
+          {showLine ? <div><b>Reminder: You will be paired with a different participant in the next round.</b></div> : <div></div>}
           {/* <div>Participants reached Screen11: {participantCount}</div>  */}
         </div>
       </div>
