@@ -213,12 +213,12 @@ function Screen8() {
                         <u><b>COMPREHENSION CHECK QUESTIONS</b></u>
                     </div>
 
-                    <div>
+                    <div style={{fontSize:'2.3rem'}}>
                         Please select the most appropriate answer to the following questions. You will not be able to continue until you have answered each question correctly.
                     </div>
                     <hr />
 
-                    <div>
+                    <div style={{fontSize:'2.3rem'}}>
                         {shouldDisplayQuestion(currentQuestion) && (
                             <div>
                                 <div>
@@ -242,6 +242,7 @@ function Screen8() {
                                     <>
                                         <div>
                                             <input
+                                                style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                                                 type="radio"
                                                 value="True"
                                                 name="ans"
@@ -250,9 +251,9 @@ function Screen8() {
                                             />{' '}
                                             <label>True</label>
                                         </div>
-                                        <br/>
                                         <div>
                                             <input
+                                                style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                                                 type="radio"
                                                 value="False"
                                                 name="ans"

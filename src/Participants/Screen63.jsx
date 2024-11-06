@@ -49,7 +49,7 @@ function Screen63() {
   return (
     <div
       style={{
-        height: "100%",
+        minHeight:'100vh',
         padding:'2rem 0',
         backgroundColor: "aliceblue",
         color: "#1c1c1c",
@@ -60,6 +60,7 @@ function Screen63() {
     >
       <div
         style={{
+          height:'max-content',
           width: "80rem",
           display: "flex",
           flexDirection: "column",

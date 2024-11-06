@@ -67,7 +67,7 @@ const clickedNext = async () => {
         display:'flex',
         justifyContent:'center',
         color:'#1c1c1c',
-        hminHeight: '100vh',
+        minHeight: '100vh',
         padding:'2rem 0'
     }}>
         <div style={{
