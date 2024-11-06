@@ -60,7 +60,7 @@ function Screen62() {
     >
       <div
         style={{
-          width: "80rem",
+          width: "100rem",
           height:'max-content',
           display: "flex",
           flexDirection: "column",
@@ -78,7 +78,6 @@ function Screen62() {
           gap:'1.3rem'
         }}>             
              <div style={{color:'#1c1c1c', fontSize:'2.3rem'}}><b>End of Round Feedback</b></div>
-             <br/>
              <div>At the end of each round, all workers will receive feedback about <b>their own compensation</b> and <b> the individual components</b> that are added to the sum of their compensation in that round, as well as their own cumulative compensation up to that round. </div>
              <br/>
              <div>Similarly, at the end of each round, all customers will receive feedback about <b>their own payoffs</b> and <b>the individual components</b> that are added to the sum of their payoffs in that round, as well as their own cumulative payoffs up to that round.</div>

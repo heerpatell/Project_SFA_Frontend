@@ -106,7 +106,7 @@ return (
           padding: "2rem",
         }}>
         <div style={{
-            width: "80rem",
+            width: "190rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

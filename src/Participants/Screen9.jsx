@@ -73,7 +73,7 @@ function Screen9() {
         }}>
         <div style={{
           height:'max-content',
-            width: "80rem",
+            width: "100rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

@@ -48,7 +48,7 @@ useEffect(()=>{
         }}>
         <div
           style={{
-            width: "80rem",
+            width: "100rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

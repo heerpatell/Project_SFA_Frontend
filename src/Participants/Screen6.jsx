@@ -61,7 +61,7 @@ function Screen6() {
       <div
         style={{
           height:'max-content',
-          width: "80rem",
+          width: "100rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
@@ -113,6 +113,7 @@ function Screen6() {
                   <div>In each round, after you choose your effort level, you will be informed of how much the Customer you are paired with has chosen to tip you. You will also be informed of your compensation in that round.</div>
                 </div>
             }
+            <br/>
             <div>Please note that Customers will be informed of your chosen effort levels in each round. However, Customers will not know the cost associated with your effort levels, how much you are paid by the restaurant, or your total compensation. In other words, Customers will <b>only</b> know how much effort you choose to serve them. </div>
              <br/>
              <div style={{color:'#1c1c1c', fontSize:'2.3rem'}}><b>End of Round Feedback</b></div>

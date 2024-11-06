@@ -220,7 +220,7 @@ function Screen14() {
       >
         <div
           style={{
-            width: "80rem",
+            width: "100rem",
             display: "flex",
             height:'max-content',
             flexDirection: "column",

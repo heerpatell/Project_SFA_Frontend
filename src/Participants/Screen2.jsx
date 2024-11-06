@@ -45,7 +45,7 @@ function Screen2() {
             textAlign:'left'
           }}>
           <div style={{
-            width:'80rem',
+            width:'100rem',
             height:'max-content',
             display:'flex',
             flexDirection:'column',

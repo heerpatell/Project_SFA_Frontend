@@ -71,7 +71,7 @@ const clickedNext = async () => {
         padding:'2rem 0'
     }}>
         <div style={{
-            width:'80rem',
+            width:'100rem',
             height: 'max-content',
             display:'flex',
             height:'100%',
@@ -128,6 +128,7 @@ const clickedNext = async () => {
         </tbody>
       </table>
     </div>
+    <br/>
             <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Compensation</b></div>
             <div>Worker’s compensation in each round is calculated as follows:</div>
 
@@ -178,6 +179,7 @@ const clickedNext = async () => {
                 </div>)
             }
 
+<br/>
             <div style={{
                 display:'flex',
                 flexDirection:'column',
@@ -197,6 +199,7 @@ const clickedNext = async () => {
             </div>
 
             <div>Please click ‘Next’ to continue.</div>
+            <br/>
             <div style={{
             display:'flex',
               justifyContent:'center'

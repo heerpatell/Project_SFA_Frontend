@@ -196,7 +196,7 @@ function Screen8() {
             >
                 <div
                     style={{
-                        width: '80rem',
+                        width: '100rem',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '1.4rem',
@@ -313,8 +313,13 @@ function Screen8() {
                             borderRadius: '0.5rem',
                             textAlign: 'center',
                             padding: '3rem', // Increased padding
-                            width: '30rem',  // Set a fixed width
-                            height: '20rem', // Set a fixed height            
+                            width: 'auto',  // Set a fixed width
+                            maxWidth: '90vw',
+                            height: '10rem', // Set a fixed height  
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center',           
                         }}
                     >
                         <p style={{ fontSize: '2.3rem' }}>{promptMessage}</p>
@@ -323,6 +328,7 @@ function Screen8() {
                             backgroundColor:'black',
                             padding:'0.5rem',
                             margin:'0.5rem',
+                            fontSize:'2.3rem',
                             borderRadius:'0.2rem',
                             cursor:'pointer'
                         }}>OK</button>
