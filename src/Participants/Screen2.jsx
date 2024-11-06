@@ -45,7 +45,7 @@ function Screen2() {
             textAlign:'left'
           }}>
           <div style={{
-            width:'50rem',
+            width:'65rem',
             display:'flex',
             flexDirection:'column',
             gap:'1rem',
@@ -65,16 +65,17 @@ function Screen2() {
               display:'flex',
               justifyContent:'center'
             }}>
-            <div style={{
+              <div style={{
                 cursor: 'pointer',
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
-                fontSize: '1.8rem',
-                color: 'aliceblue',
+                height: '4rem',
+                fontSize: '2.3rem',
+                color: 'black',
                 backgroundColor: '#1c1c1c',
+                color:'aliceblue',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center'

@@ -54,17 +54,17 @@ function Screen25() {
     >
       <div
         style={{
-          width: "50rem",
+          width: "65rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
-          fontSize: "1.4rem",
+          fontSize: "2.3rem",
         }}
       >
         <div
           style={{
             color: "aliceblue",
-            fontSize: "2rem",
+            fontSize: "3rem",
             textAlign: "center",
           }}
         >
@@ -72,7 +72,7 @@ function Screen25() {
         </div>
         <div
           style={{
-            fontSize: "1.2rem",
+            fontSize: "2.3rem",
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
@@ -109,7 +109,7 @@ function Screen25() {
                 width: '5rem',
                 borderRadius: '0.2rem',
                 height: '3rem',
-                fontSize: '1.4rem',
+                fontSize: '2.3rem',
                 color: 'black',
                 backgroundColor: '#6AD4DD',
                 display: 'flex',

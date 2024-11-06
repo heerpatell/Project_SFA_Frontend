@@ -108,17 +108,17 @@ function Screen13() {
       >
         <div
           style={{
-            width: "52rem",
+            width: "65rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
-              fontSize: "2rem",
+              fontSize: "3rem",
               textAlign: "center",
             }}
           >
@@ -133,7 +133,7 @@ function Screen13() {
           </div>
           <div
             style={{
-              fontSize: "1.2rem",
+              fontSize: "2.3rem",
               display: "flex",
               flexDirection: "column",
               gap: "1rem",
@@ -161,7 +161,7 @@ function Screen13() {
                   outline: "none",
                   backgroundColor: "transparent",
                   padding: "0.5rem",
-                  fontSize: "1rem",
+                  fontSize: "2.3rem",
                   color: "#1c1c1c",
                   borderBottom: "1px solid #1c1c1c",
                 }}
@@ -192,10 +192,10 @@ function Screen13() {
                 opacity:tip?1:0.5,
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
-                fontSize: '1.4rem',
+                height: '4rem',
+                fontSize: '2.3rem',
                 color: 'aliceblue',
                 backgroundColor: '#1c1c1c',
                 display: 'flex',

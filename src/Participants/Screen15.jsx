@@ -80,21 +80,21 @@ function Screen15() {
       >
         <div
           style={{
-            width: "50rem",
+            width: "63rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
-              fontSize: "1.5rem",
+              fontSize: "2.3rem",
               textAlign: "center",
             }}
           >
-            <div style={{ paddingBottom: "1.3rem", fontSize: '2rem' }}>
+            <div style={{ paddingBottom: "1.3rem", fontSize: '3em' }}>
             {
               (currentround == 'Practice Round') && (
                 <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b></u>
@@ -108,7 +108,7 @@ function Screen15() {
               style={{
                 textAlign: "left",
                 color: "#1c1c1c",
-                fontSize: "1.2rem",
+                fontSize: "2.3rem",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
@@ -257,20 +257,20 @@ function Screen15() {
                   gap: "1.2rem",
                 }}
               >
-                <div style={{ color: "#1c1c1c", fontSize:'1.8rem' }}><b>Worker Effort Level</b></div>
+                <div style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>Worker Effort Level</b></div>
                 <div>
                   In this round, the Worker that you are paired with has chosen
                   the effort level:
                 </div>
                 <div>
                   <b>Worker Effort Level:{" "}
-                  <span style={{ color: "#1c1c1c", fontSize:'2rem' }}><b>{effort}</b></span></b>
+                  <span style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>{effort}</b></span></b>
                 </div>
               </div>
 
               <div
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "2.3rem",
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
@@ -289,10 +289,10 @@ function Screen15() {
                     cursor: 'pointer',
                     margin: 'auto',
                     marginTop: '2rem',
-                    width: '5rem',
+                    width: '8rem',
                     borderRadius: '0.2rem',
-                    height: '3rem',
-                    fontSize: '1.4rem',
+                    height: '4rem',
+                    fontSize: '2.3rem',
                     color: 'aliceblue',
                     backgroundColor: '#1c1c1c',
                     display: 'flex',

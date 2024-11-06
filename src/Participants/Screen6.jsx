@@ -60,14 +60,14 @@ function Screen6() {
     >
       <div
         style={{
-          width: "50rem",
+          width: "65rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
-          fontSize: "1.4rem",
+          fontSize: "2.3rem",
         }}
       >
-        <div style={{ color: "#1c1c1c", textAlign: "center",fontSize: "2rem" }}>
+        <div style={{ color: "#1c1c1c", textAlign: "center",fontSize: "3rem" }}>
             <u><b>WORKER FEEDBACK</b></u>
         </div>
 
@@ -114,7 +114,7 @@ function Screen6() {
             }
             <div>Please note that Customers will be informed of your chosen effort levels in each round. However, Customers will not know the cost associated with your effort levels, how much you are paid by the restaurant, or your total compensation. In other words, Customers will <b>only</b> know how much effort you choose to serve them. </div>
              
-             <div style={{color:'#1c1c1c', fontSize:'1.5rem'}}><b>End of Round Feedback</b></div>
+             <div style={{color:'#1c1c1c', fontSize:'2.3rem'}}><b>End of Round Feedback</b></div>
              <div>At the end of each round, all workers will receive feedback about <b>their own compensation</b> and <b> the individual components</b> that are added to the sum of their compensation in that round, as well as their own cumulative compensation up to that round. </div>
              <div>Similarly, at the end of each round, all customers will receive feedback about <b>their own payoffs</b> and <b>the individual components</b> that are added to the sum of their payoffs in that round, as well as their own cumulative payoffs up to that round.</div>
              <div>Next, you will take a short quiz to test your comprehension of the instructions. </div>
@@ -130,10 +130,10 @@ function Screen6() {
                   cursor: 'pointer',
                   margin: 'auto',
                   marginTop: '2rem',
-                  width: '5rem',
+                  width: '8rem',
                   borderRadius: '0.2rem',
-                  height: '3rem',
-                  fontSize: '1.4rem',
+                  height: '4rem',
+                  fontSize: '2.3rem',
                   color: 'aliceblue',
                   backgroundColor: '#1c1c1c',
                   display: 'flex',

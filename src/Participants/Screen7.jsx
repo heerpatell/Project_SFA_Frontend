@@ -63,19 +63,19 @@ function Screen7() {
       >
         <div
           style={{
-            width: "50rem",
+            width: "65rem",
             height:'100%',
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
               textAlign: "center",
-              fontSize: "2rem",
+              fontSize: "3rem",
             }}
           >
             <b>
@@ -130,10 +130,10 @@ function Screen7() {
                 cursor: 'pointer',
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
-                fontSize: '1.4rem',
+                height: '4rem',
+                fontSize: '2.3rem',
                 color: 'aliceblue',
                 backgroundColor: '#1c1c1c',
                 display: 'flex',

@@ -43,21 +43,21 @@ function Screen27() {
       >
         <div
           style={{
-            width: "50rem",
+            width: "65rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
-              fontSize: "1.5rem",
+              fontSize: "2.3rem",
               textAlign: "center",
             }}
           >
-        <div style={{fontSize:'2rem'}}><u><b>END OF STUDY</b></u></div>
+        <div style={{fontSize:'2.3rem'}}><u><b>END OF STUDY</b></u></div>
             <br/>
             <div style={{color:'#1c1c1c'}}>Thank you very much for your participation today! </div>
             <br/>

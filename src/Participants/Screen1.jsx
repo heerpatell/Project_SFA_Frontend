@@ -41,15 +41,15 @@ function Screen1() {
       alignItems:'center',
       height:'100vh',
       textAlign:'center',
-      fontSize:'1.8rem'
+      fontSize:'2.3rem'
     }}>
         <div style={{
             display:'flex',
             flexDirection:'column',
-            gap:'1.8rem'
+            gap:'2.3rem'
         }}>
             <div style={{
-              width:'50rem',
+              width:'65rem',
               textAlign:'left'
             }}>
             <div style={{padding:'1.5rem 0', fontSize:'3rem', color:'#1c1c1c', textAlign:'center'}}><u><b>INTRODUCTION</b></u></div>
@@ -74,10 +74,10 @@ function Screen1() {
                 cursor: 'pointer',
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
-                fontSize: '1.8rem',
+                height: '4rem',
+                fontSize: '2.3rem',
                 color: 'black',
                 backgroundColor: '#1c1c1c',
                 color:'aliceblue',

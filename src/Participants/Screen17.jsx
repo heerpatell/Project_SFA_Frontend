@@ -89,7 +89,7 @@ const clickedNext = () => {
 
 const finalMessageStyle = {
   color: "#FFD700",
-  fontSize: "1.5rem",
+  fontSize: "2.3rem",
   marginTop: "1.5rem",
   textAlign: "center",
 };
@@ -106,18 +106,18 @@ return (
           padding: "2rem",
         }}>
         <div style={{
-            width: "58rem",
+            width: "65rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}>
             <div style={{
               color: "#1c1c1c",
-              fontSize: "1.5rem",
+              fontSize: "2.3rem",
               textAlign: "center",
             }}>
-              <div style={{fontSize:'2rem'}}>
+              <div style={{fontSize:'3rem'}}>
                 {
                   (currentround == 'Practice Round') && (
                     <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b></u>
@@ -128,7 +128,7 @@ return (
                 }
                 </div>
               <div style={{
-                fontSize: "1.2rem",
+                fontSize: "2.3rem",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
@@ -188,7 +188,7 @@ return (
                 }
                               <div
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "2.3rem",
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
@@ -207,10 +207,10 @@ return (
                     cursor: 'pointer',
                     margin: 'auto',
                     marginTop: '2rem',
-                    width: '5rem',
+                    width: '8rem',
                     borderRadius: '0.2rem',
-                    height: '3rem',
-                    fontSize: '1.4rem',
+                    height: '4rem',
+                    fontSize: '2.3rem',
                     color: 'aliceblue',
                     backgroundColor: '#1c1c1c',
                     display: 'flex',

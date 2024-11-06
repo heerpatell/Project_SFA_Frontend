@@ -113,7 +113,7 @@ function Screen16() {
 
   const finalMessageStyle = {
     color: "#FFD700",
-    fontSize: "1.5rem",
+    fontSize: "2.3rem",
     marginTop: "1.5rem",
     textAlign: "center",
   };
@@ -133,21 +133,21 @@ function Screen16() {
       >
         <div
           style={{
-            width: "52rem",
+            width: "65rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "aliceblue",
-              fontSize: "1.5rem",
+              fontSize: "2.3rem",
               textAlign: "center",
             }}
           >
-            <div style={{color:'#1c1c1c', textTransform:'uppercase', fontSize:'2rem'}}>
+            <div style={{color:'#1c1c1c', textTransform:'uppercase', fontSize:'3rem'}}>
             {
               (currentround == 'Practice Round') && (
                 <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION &nbsp;|&nbsp; {currentround}</b></u>
@@ -159,7 +159,7 @@ function Screen16() {
             </div>
             <div
               style={{
-                fontSize: "1.2rem",
+                fontSize: "2.3rem",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
@@ -180,7 +180,7 @@ function Screen16() {
               </div>
               <div
                   style={{
-                    fontSize: "1.5rem",
+                    fontSize: "2.3rem",
                     fontWeight: "800",
                     color: "#1C1c1c",
                     padding: "1rem 0",
@@ -199,7 +199,7 @@ function Screen16() {
 
                 <div
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "2.3rem",
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
@@ -216,7 +216,7 @@ function Screen16() {
                         outline: "none",
                         backgroundColor: "transparent",
                         padding: "0.5rem",
-                        fontSize: "1rem",
+                        fontSize: "2.3rem",
                         color: "#1c1c1c",
                         borderBottom: "1px solid #1c1c1c",
                       }}
@@ -242,10 +242,10 @@ function Screen16() {
                     opacity:tip?1:0.5,
                     margin: 'auto',
                     marginTop: '2rem',
-                    width: '5rem',
+                    width: '8rem',
                     borderRadius: '0.2rem',
-                    height: '3rem',
-                    fontSize: '1.4rem',
+                    height: '4rem',
+                    fontSize: '2.3rem',
                     color: 'aliceblue',
                     backgroundColor: '#1c1c1c',
                     display: 'flex',

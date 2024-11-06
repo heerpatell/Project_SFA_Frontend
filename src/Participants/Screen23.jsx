@@ -49,7 +49,7 @@ function QuestionScale({ question, name, onChange }) {
           justifyContent: "space-between",
           paddingTop: "0.2rem",
           color: "gray",
-          fontSize: "1rem",
+          fontSize: "2.3rem",
           paddingBottom: "0.5rem",
         }}
       >
@@ -146,18 +146,18 @@ function Screen23() {
     >
       <div
         style={{
-          width: "50rem",
+          width: "65rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
-          fontSize: "1.4rem",
+          fontSize: "2.3rem",
           padding: '2rem',
         }}
       >
         <div
           style={{
             color: "#1c1c1c",
-            fontSize: "2rem",
+            fontSize: "3rem",
             textAlign: "center",
           }}
         >
@@ -165,7 +165,7 @@ function Screen23() {
         </div>
         <div
           style={{
-            fontSize: "1.2rem",
+            fontSize: "2.3rem",
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
@@ -208,7 +208,7 @@ function Screen23() {
 
           <div
             style={{
-              fontSize: "1.2rem",
+              fontSize: "2.3rem",
               display: "flex",
               flexDirection: "column",
               color: '#1c1c1c',
@@ -232,7 +232,7 @@ function Screen23() {
                 width: '5rem',
                 borderRadius: '0.2rem',
                 height: '3rem',
-                fontSize: '1.4rem',
+                fontSize: '2.3rem',
                 color: 'black',
                 backgroundColor: allQuestionsAnswered() ? '#1c1c1c' : 'gray', // Change color based on enabled state
                 color: 'aliceblue',

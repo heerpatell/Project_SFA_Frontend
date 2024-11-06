@@ -440,10 +440,10 @@ function Screen20() {
   const buttonStyle = {
     cursor: 'pointer',
     marginTop: '2rem',
-    width: '5rem',
+    width: '8rem',
     borderRadius: '0.2rem',
-    height: '3rem',
-    fontSize: '1.4rem',
+    height: '4rem',
+    fontSize: '2.3rem',
     color: 'aliceblue',
     backgroundColor: '#1c1c1c',
     display: 'flex',
@@ -483,7 +483,7 @@ function Screen20() {
         <>
           <div
             style={{
-              fontSize: "2rem",
+              fontSize: "3rem",
               paddingBottom: "1rem",
               textAlign: "center",
             }}
@@ -514,7 +514,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -537,7 +537,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -560,7 +560,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -583,7 +583,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
                 As a Customer, you have earned a total of {lastRoundCumulativeComp} tokens
                 in {currentround} round(s).
               </div>

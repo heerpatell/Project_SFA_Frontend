@@ -131,17 +131,17 @@ function Screen11() {
     >
       <div
         style={{
-          width: "50rem",
+          width: "65rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
-          fontSize: "1.4rem",
+          fontSize: "2.3rem",
         }}
       >
         <div
           style={{
             color: "#1c1c1c",
-            fontSize: "2rem",
+            fontSize: "3rem",
             textAlign: "center",
           }}
         >

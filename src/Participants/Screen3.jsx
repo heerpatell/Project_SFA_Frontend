@@ -85,7 +85,7 @@ function Screen3() {
         justifyContent: 'center',
         alignItems: 'center',
         padding: '2rem 0',
-        fontSize: '1.3rem',
+        fontSize: '2.3rem',
         color: '#1c1c1c',
       }}>
         <div style={{
@@ -93,9 +93,9 @@ function Screen3() {
           flexDirection: 'column',
           gap: '1rem',
         }}>
-          <div style={{ textAlign: 'center', fontSize: '2rem', color: '#1c1c1c' }}><u><b>YOUR ROLE</b></u></div>
+          <div style={{ textAlign: 'center', fontSize: '3rem', color: '#1c1c1c' }}><u><b>YOUR ROLE</b></u></div>
           <div>In this study, you are assigned to the role of &nbsp;</div>
-          <div style={{ textAlign: 'center', fontSize:'2rem', textTransform:'capitalize'}}><b>{assignedCategory}</b></div>
+          <div style={{ textAlign: 'center', fontSize:'3rem', textTransform:'capitalize'}}><b>{assignedCategory}</b></div>
           <div>Your role will remain unchanged throughout the study.</div>
           
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
@@ -116,10 +116,10 @@ function Screen3() {
               cursor: 'pointer',
               margin: 'auto',
               marginTop: '2rem',
-              width: '5rem',
+              width: '8rem',
               borderRadius: '0.2rem',
-              height: '3rem',
-              fontSize: '1.4rem',
+              height: '4rem',
+              fontSize: '2.3rem',
               color: 'aliceblue',
               backgroundColor: isChecked ? '#1c1c1c' : '#ccc', // Change color based on checkbox state
               display: 'flex',
@@ -129,6 +129,7 @@ function Screen3() {
             }}
               onClick={isChecked ? clickedNext : null}>Next</div>
           </div>
+
         </div>
       </div>
     </>

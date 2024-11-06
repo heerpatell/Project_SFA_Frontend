@@ -537,10 +537,10 @@ function Screen19() {
   const buttonStyle = {
     cursor: 'pointer',
     marginTop: '2rem',
-    width: '5rem',
+    width: '8rem',
     borderRadius: '0.2rem',
-    height: '3rem',
-    fontSize: '1.4rem',
+    height: '4rem',
+    fontSize: '2.3rem',
     color: 'aliceblue',
     backgroundColor: '#1c1c1c',
     display: 'flex',
@@ -551,7 +551,7 @@ function Screen19() {
   return (
     <div style={containerStyle}>
       <div
-        style={{ textAlign: "center", fontSize: "2rem", paddingBottom: "1rem" }}
+        style={{ textAlign: "center", fontSize: "3rem", paddingBottom: "1rem" }}
       >
         <u style={{textTransform:'capitalize'}}>
         <b>
@@ -583,7 +583,7 @@ function Screen19() {
           </table>
           <br/>
           <br/>
-          <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a {lastRoundCumulativeComp} tokens in{" "}
             {currentround} round(s).
           </div>
@@ -606,7 +606,7 @@ function Screen19() {
           </table>
           <br/>
           <br/>
-          <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
@@ -630,7 +630,7 @@ function Screen19() {
           </table>
           <br/>
           <br/>
-          <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
@@ -655,7 +655,7 @@ function Screen19() {
           </table>
           <br/>
           <br/>
-          <div style={{ fontSize: "1.2rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>

@@ -64,7 +64,7 @@ function QuestionScale({ question, name, onChange }) {
           </React.Fragment>
         ))}
       </div>
-      <div style={{display:'flex', justifyContent:'space-between', paddingTop:'0.2rem', color:'gray', fontSize:'1rem', paddingBottom:'0.5rem'}}>
+      <div style={{display:'flex', justifyContent:'space-between', paddingTop:'0.2rem', color:'gray', fontSize:'2.3rem', paddingBottom:'0.5rem'}}>
         <div style={{color:'#1c1c1c'}}>Not at all</div>
         <div style={{color:'#1c1c1c'}}>Somewhat</div>
         <div style={{color:'#1c1c1c'}}>Very much</div>
@@ -157,17 +157,17 @@ function Screen22() {
     >
       <div
         style={{
-          width: "50rem",
+          width: "65rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",
-          fontSize: "1.4rem",
+          fontSize: "2.3rem",
         }}
       >
         <div
           style={{
             color: "#1c1c1c",
-            fontSize: "2rem",
+            fontSize: "3rem",
             textAlign: "center",
           }}
         >
@@ -175,7 +175,7 @@ function Screen22() {
         </div>
         <div
           style={{
-            fontSize: "1.2rem",
+            fontSize: "2.3rem",
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
@@ -230,7 +230,7 @@ function Screen22() {
             )}
           </div>
 
-          <div style={{ fontSize: "1.2rem", textAlign: "center" }}>
+          <div style={{ fontSize: "2.3rem", textAlign: "center" }}>
             Please click ‘Next’ to continue.
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -240,10 +240,10 @@ function Screen22() {
                 opacity: isButtonEnabled ? 1 : 0.5,
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
-                fontSize: '1.4rem',
+                height: '4rem',
+                fontSize: '2.3rem',
                 color: 'aliceblue',
                 backgroundColor: '#1c1c1c',
                 display: 'flex',

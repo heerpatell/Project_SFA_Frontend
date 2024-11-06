@@ -220,18 +220,18 @@ function Screen14() {
       >
         <div
           style={{
-            width: "58rem",
+            width: "65rem",
             display: "flex",
             height:'100%',
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "1.4rem",
+            fontSize: "2.3rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
-              fontSize: "2rem",
+              fontSize: "3rem",
               textAlign: "center",
             }}
           >
@@ -247,7 +247,7 @@ function Screen14() {
             </u>
             <div
               style={{
-                fontSize: "1.2rem",
+                fontSize: "2.3rem",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
@@ -258,7 +258,7 @@ function Screen14() {
             >
               <div
                 style={{
-                  fontSize: "1.5rem",
+                  fontSize: "2.3rem",
                   fontWeight: "800",
                   color: "#1c1c1c",
                 }}
@@ -344,7 +344,7 @@ function Screen14() {
               </div>
               <div
                 style={{
-                  fontSize: "1.5rem",
+                  fontSize: "2.3rem",
                   fontWeight: "800",
                   color: "#1c1c1c",
                 }}
@@ -484,12 +484,12 @@ function Screen14() {
                 <div>
                   <div
                     style={{
-                      fontSize: "1.5rem",
+                      fontSize: "2.3rem",
                       fontWeight: "800",
-                      color: "aliceblue",
+                      color: "#1c1c1c",
                     }}
                   >
-                    Tip from Customer
+                    Customer Tip
                   </div>
                   <div
                     style={{
@@ -500,7 +500,7 @@ function Screen14() {
                   >
                     <div>
                       In this round, the Customer that you are paired with has{" "}
-                      chosen to tip you: <div style={{fontSize:'2rem'}}><b>{tip}</b></div>
+                      chosen to tip you: <div style={{fontSize:'2.3rem'}}><b>{tip}</b></div>
                     </div>
                     <div>Tip Paid to the Worker: {tip}</div>
                   </div>
@@ -509,7 +509,7 @@ function Screen14() {
               <div>
                 <div
                   style={{
-                    fontSize: "1.5rem",
+                    fontSize: "2.3rem",
                     fontWeight: "800",
                     color: "#1c1c1c",
                     paddingBottom: "1rem",
@@ -542,7 +542,7 @@ function Screen14() {
                         outline: "none",
                         backgroundColor: "transparent",
                         padding: "0.5rem",
-                        fontSize: "1rem",
+                        fontSize: "2.3rem",
                         color: "#1c1c1c",
                         borderBottom: "1px solid #1c1c1c",
                       }}
@@ -564,7 +564,7 @@ function Screen14() {
 
               <div
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "2.3rem",
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
@@ -584,10 +584,10 @@ function Screen14() {
                     opacity: effortlevel ? 1 : 0.5,
                     margin: "auto",
                     marginTop: "2rem",
-                    width: "5rem",
+                    width: "8rem",
                     borderRadius: "0.2rem",
-                    height: "3rem",
-                    fontSize: "1.4rem",
+                    height: "4rem",
+                    fontSize: "2.3rem",
                     color: "aliceblue",
                     backgroundColor: "#1c1c1c",
                     display: "flex",
