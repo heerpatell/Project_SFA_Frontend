@@ -62,15 +62,16 @@ useEffect(()=>{
               textAlign: "center",
             }}
           >
-            <u style={{textTransform:'uppercase'}}><b></b></u>
+
+            <u style={{ textTransform: "uppercase" }}>
             {
-              (currentround == 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b></u>
-              )
-              (currentround != 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
-              )
-            }
+      currentround === 'Practice Round' ? (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>
           </div>
           <div style={{
             fontSize:'2.3rem',

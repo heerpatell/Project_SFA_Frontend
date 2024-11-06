@@ -255,9 +255,8 @@ function Screen0() {
               <b>
                 <u>RESTRICTIONS</u>
               </b>
-              <br/>
+              <br />
               <div>
-                {" "}
                 This study is restricted to individuals who are at least 18
                 years old.
               </div>

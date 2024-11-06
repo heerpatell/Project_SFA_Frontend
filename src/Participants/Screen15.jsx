@@ -95,14 +95,16 @@ function Screen15() {
             }}
           >
             <div style={{ paddingBottom: "1.3rem", fontSize: '3em' }}>
+            <u style={{ textTransform: "uppercase" }}>
             {
-              (currentround == 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b></u>
-              )
-              (currentround != 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b></u>
-              )
-            }
+      currentround === 'Practice Round' ? (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>
+
             </div>
             <div
               style={{

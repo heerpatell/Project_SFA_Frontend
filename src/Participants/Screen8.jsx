@@ -322,11 +322,11 @@ function Screen8() {
                             alignItems: 'center',           
                         }}
                     >
-                        <p style={{ fontSize: '2.3rem' }}>{promptMessage}</p>
+                        <p style={{ fontSize: '2rem' }}>{promptMessage}</p>
                         <button onClick={closePrompt} style={{
                             color:'aliceblue',
                             backgroundColor:'black',
-                            padding:'1 0.5rem',
+                            padding:'1.2rem',
                             margin:'0.5rem',
                             fontSize:'2.3rem',
                             borderRadius:'0.2rem',

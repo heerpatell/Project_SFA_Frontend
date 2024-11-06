@@ -122,14 +122,15 @@ function Screen13() {
               textAlign: "center",
             }}
           >
+            <u style={{ textTransform: "uppercase" }}>
             {
-              (currentround == 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION | {currentround}</b></u>
-              )
-              (currentround != 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION | ROUND {currentround}</b></u>
-              )
-            }
+      currentround === 'Practice Round' ? (
+        <b>TIPPING DECISION &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>TIPPING DECISION &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>
           </div>
           <div
             style={{

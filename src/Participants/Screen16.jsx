@@ -148,14 +148,15 @@ function Screen16() {
             }}
           >
             <div style={{color:'#1c1c1c', textTransform:'uppercase', fontSize:'3rem'}}>
+            <u style={{ textTransform: "uppercase" }}>
             {
-              (currentround == 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION &nbsp;|&nbsp; {currentround}</b></u>
-              )
-              (currentround != 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>TIPPING DECISION &nbsp;|&nbsp; ROUND {currentround}</b></u>
-              )
-            }
+      currentround === 'Practice Round' ? (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>
             </div>
             <div
               style={{
