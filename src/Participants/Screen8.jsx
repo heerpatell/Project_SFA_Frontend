@@ -229,6 +229,7 @@ function Screen8() {
                                     questions[currentQuestion].options.map((option, index) => (
                                         <div key={index}>
                                             <input
+                                                style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                                                 type="radio"
                                                 value={option}
                                                 name="ans"
@@ -309,12 +310,14 @@ function Screen8() {
                     <div
                         style={{
                             backgroundColor: 'white',
-                            padding: '2rem',
                             borderRadius: '0.5rem',
                             textAlign: 'center',
+                            padding: '3rem', // Increased padding
+                            width: '30rem',  // Set a fixed width
+                            height: '20rem', // Set a fixed height            
                         }}
                     >
-                        <p>{promptMessage}</p>
+                        <p style={{ fontSize: '2.3rem' }}>{promptMessage}</p>
                         <button onClick={closePrompt} style={{
                             color:'aliceblue',
                             backgroundColor:'black',

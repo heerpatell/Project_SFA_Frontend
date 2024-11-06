@@ -98,6 +98,7 @@ function Screen3() {
           <div style={{ textAlign: 'center', fontSize:'3rem', textTransform:'capitalize'}}><b>{assignedCategory}</b></div>
           <div>Your role will remain unchanged throughout the study.</div>
           
+          <br/>
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
             <input
               type="checkbox"
