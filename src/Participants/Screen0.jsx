@@ -255,7 +255,7 @@ old.</div>
                   name="consent"
                   type="radio"
                   value="yes"
-                  size={20}
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                   checked={consent === "yes"}
                   onChange={handleConsentChange}
                 />
@@ -265,9 +265,10 @@ old.</div>
               <div style={{ display: "flex", gap: "0.5rem" }}>
                 <input
                   name="consent"
-                  size={20}
+                  size={40}
                   type="radio"
                   value="no"
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                   checked={consent === "no"}
                   onChange={handleConsentChange}
                 />

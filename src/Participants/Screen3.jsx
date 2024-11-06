@@ -101,10 +101,9 @@ function Screen3() {
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
             <input
               type="checkbox"
-              size={20}
               checked={isChecked}
               onChange={handleCheckboxChange}
-              style={{ marginRight: '0.5rem' }}
+              style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
             />
             I understand that I have been assigned to the role of {assignedCategory} for the duration of this study.
           </label>
