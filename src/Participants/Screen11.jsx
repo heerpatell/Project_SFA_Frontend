@@ -13,8 +13,7 @@ function Screen11() {
   const [participantCount, setParticipantCount] = useState(0); // Track participants count
   const [hasEmitted, setHasEmitted] = useState(false); // Track if event has been emitted
   const [updatedCurrentRound, setUpdatedCurrentRound] = useState();
-  const [showLine, setShowLine] = useState(false)
-  let { pnumber, condition, activeatpg11 } = useParams();
+  let { pnumber, condition, activeatpg11, checker } = useParams();
   activeatpg11 = Number(activeatpg11);
 
     const verifyUser = () => {
@@ -81,9 +80,6 @@ function Screen11() {
       );
       if (roundRes.data.currentRound == "0") {
         roundRes.data.currentRound = "Practice Round";
-      }else{
-        console.log(85, showLine)
-        setShowLine(true)
       }
 
       if (categoryRes.data.assignedCategory === "Customer") {
@@ -158,10 +154,8 @@ function Screen11() {
             reach this stage of the study. Please be patient during this time.{" "}
           </div>
 
-          {/* <div>Your arrival count: {activeatpg11}</div> */}
           <br />
-          {showLine ? <div><b>Reminder: You will be paired with a different participant in the next round.</b></div> : <div></div>}
-          {/* <div>Participants reached Screen11: {participantCount}</div>  */}
+          {checker ? <div><b>Reminder: You will be paired with a different participant in the next round.</b></div> : <div></div>}
         </div>
       </div>
     </div>

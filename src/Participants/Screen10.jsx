@@ -15,7 +15,7 @@ function Screen10() {
         console.log(15, res.data)
       }
       console.log(17, res.data)
-      navigate(`/screen11/${pnumber}/${condition}/${res.data.activeatpg11}`);
+      navigate(`/screen11/${pnumber}/${condition}/${res.data.activeatpg11}/1`);
     })
   };
   const verifyUser = () => {

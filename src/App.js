@@ -60,7 +60,7 @@ function App() {
       <Route exact path='/screen8/:pnumber/:condition' element={<Screen8/>}/>
       <Route exact path='/screen9/:pnumber/:condition' element={<Screen9/>}/>
       <Route exact path='/screen10/:pnumber/:condition' element={<Screen10/>}/>
-      <Route exact path='/screen11/:pnumber/:condition/:activeatpg11' element={<Screen11/>}/>
+      <Route exact path='/screen11/:pnumber/:condition/:activeatpg11/:checker?' element={<Screen11/>}/>
       <Route exact path='/screen12/:pnumber/:condition/:currentround' element={<Screen12/>}/>
       <Route exact path='/screen13/:pnumber/:condition/:currentround' element={<Screen13/>}/>
       <Route exact path='/screen14/:pnumber/:condition/:currentround' element={<Screen14/>}/>
