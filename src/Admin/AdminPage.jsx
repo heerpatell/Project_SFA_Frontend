@@ -96,7 +96,7 @@ function AdminPage() {
               border: "1px solid black",
               padding: "1rem",
               width:'40rem',
-              fontSize:'1.5rem',
+              fontSize:'2.3rem',
               justifyContent: "space-between",
             }}
           >
@@ -106,7 +106,7 @@ function AdminPage() {
               style={{
                 cursor: "pointer",
                 color: "black",
-                fontSize: "1.6rem",
+                fontSize: "2.3rem",
               }}
             />
           </div>
@@ -115,7 +115,7 @@ function AdminPage() {
               <div
                 style={{
                   color: "#1c1c1c",
-                  fontSize: "1.3rem",
+                  fontSize: "2.3rem",
                   marginTop: "1rem",
                   textAlign: "center",
                 }}
@@ -127,9 +127,9 @@ function AdminPage() {
           </div>
 
           <div className="secondrow-adminpage">
-              <div style={{fontSize:'1.6rem', display:'flex', color:'black'}}>Number of Participants: <div style={{color:'black'}}>&nbsp;&nbsp;{participants}</div></div> 
-              <div style={{fontSize:'1.6rem', display:'flex', color:'black'}}>Number of Rounds: <div style={{color:'black'}}>&nbsp;&nbsp;{rounds}</div></div>
-              <div style={{fontSize:'1.6rem', display:'flex', color:'black'}}>Entered Condition: <div style={{color:'black'}}>&nbsp;&nbsp;{condition}</div></div>
+              <div style={{fontSize:'2.3rem', display:'flex', color:'black'}}>Number of Participants: <div style={{color:'black'}}>&nbsp;&nbsp;{participants}</div></div> 
+              <div style={{fontSize:'2.3rem', display:'flex', color:'black'}}>Number of Rounds: <div style={{color:'black'}}>&nbsp;&nbsp;{rounds}</div></div>
+              <div style={{fontSize:'2.3rem', display:'flex', color:'black'}}>Entered Condition: <div style={{color:'black'}}>&nbsp;&nbsp;{condition}</div></div>
           </div>
 
           <div
@@ -140,7 +140,7 @@ function AdminPage() {
               width: '13rem',
               borderRadius: '0.2rem',
               height: '3rem',
-              fontSize: '1.4rem',
+              fontSize: '2.3rem',
               color: 'aliceblue',
               backgroundColor: '#1c1c1c',
               display: 'flex',
