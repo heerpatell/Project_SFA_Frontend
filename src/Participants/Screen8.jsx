@@ -326,7 +326,7 @@ function Screen8() {
                         <button onClick={closePrompt} style={{
                             color:'aliceblue',
                             backgroundColor:'black',
-                            padding:'1.2rem',
+                            padding:'0.8rem',
                             margin:'0.5rem',
                             fontSize:'2.3rem',
                             borderRadius:'0.2rem',

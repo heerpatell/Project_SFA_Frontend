@@ -480,6 +480,7 @@ function Screen14() {
                   </div> */}
                 </div>
               )}
+              <br />
               {showPre && (
                 <div>
                   <div
@@ -529,12 +530,12 @@ function Screen14() {
                     As a Worker, you can choose an effort level between 0.1 and{" "}
                     1.0 (inclusive).{" "}
                   </div>
-                  <div>Please make your choice: </div>
+                  {/* <div>Please make your choice: </div>
                   <div style={{ color: "#1c1c1c" }}>
                     <b>
                       How much effort level do you choose to serve the customer?
                     </b>
-                  </div>
+                  </div> */}
                   <div>
                     <input
                       style={{
@@ -596,9 +597,9 @@ function Screen14() {
                     alignItems: "center",
                   }}
                   onClick={() => {
-                    if (effortlevel) {
+                    if (effortlevel >= 0.1 && effortlevel <= 1.0) {
                       clickedNext(); 
-                    }
+                    }              
                   }}
                 >
                   Next

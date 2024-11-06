@@ -144,6 +144,7 @@ function Screen13() {
               As a Customer, you now need to{" "}
               decide how much to tip the Worker.{" "}
             </div>
+            <br />
             <div>
               You need to decide how much to tip the Worker for their service{" "}
               before they serve you. The amount of tip can range from
@@ -151,6 +152,7 @@ function Screen13() {
               Worker will be informed of the tip you pay before they make
               their choice of effort level.
             </div>
+            <br />
             <div style={{ color: "#1c1c1c" }}>
               <b>How much do you want to tip the Worker for their service?</b>
             </div>
@@ -162,7 +164,7 @@ function Screen13() {
                   outline: "none",
                   backgroundColor: "transparent",
                   padding: "0.5rem",
-                  fontSize: "2.3rem",
+                  fontSize: "2rem",
                   color: "#1c1c1c",
                   borderBottom: "1px solid #1c1c1c",
                 }}
@@ -177,8 +179,9 @@ function Screen13() {
               )}
             </div>
           </div>
+          <br />
 
-          <div style={{ fontSize: "1.2rem", color:'#1c1c1c' }}>
+          <div style={{ fontSize: "2.3rem", color:'#1c1c1c' }}>
             Please click ‘Next’ to continue.
           </div>
           <div
