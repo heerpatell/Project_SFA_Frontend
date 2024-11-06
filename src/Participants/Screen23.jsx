@@ -58,6 +58,7 @@ function QuestionScale({ question, name, onChange }) {
         <div style={{ color: '#1c1c1c' }}>Very much</div>
       </div>
       <hr />
+      <br />
     </div>
   );
 }
@@ -230,9 +231,9 @@ function Screen23() {
                 cursor: allQuestionsAnswered() ? 'pointer' : 'not-allowed',
                 margin: 'auto',
                 marginTop: '2rem',
-                width: '5rem',
+                width: '8rem',
                 borderRadius: '0.2rem',
-                height: '3rem',
+                height: '4rem',
                 fontSize: '2.3rem',
                 color: 'black',
                 backgroundColor: allQuestionsAnswered() ? '#1c1c1c' : 'gray', // Change color based on enabled state

@@ -70,6 +70,7 @@ function QuestionScale({ question, name, onChange }) {
         <div style={{color:'#1c1c1c'}}>Very much</div>
       </div>
       <hr/>
+      <br/>
     </div>
   );
 }

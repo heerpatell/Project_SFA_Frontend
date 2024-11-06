@@ -81,7 +81,8 @@ function Screen11() {
       );
       if (roundRes.data.currentRound == "0") {
         roundRes.data.currentRound = "Practice Round";
-        console.log(84, showLine)
+      }else{
+        console.log(85, showLine)
         setShowLine(true)
       }
 

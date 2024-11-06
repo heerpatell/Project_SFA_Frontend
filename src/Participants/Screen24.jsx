@@ -71,6 +71,7 @@ function QuestionScale({ question, name, onChange }) {
         <div>Very much</div>
       </div>
       <hr />
+      <br />
     </div>
   );
 }

@@ -532,6 +532,7 @@ function Screen19() {
   const tdStyle = {
     border: "1px solid #1c1c1c",
     padding: "2.5rem 2rem",
+    fontSize: "2.3rem",
     textAlign: "center",
   };
 

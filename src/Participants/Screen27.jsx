@@ -99,6 +99,7 @@ function Screen27() {
           <div>
             In order to help us understand why your responses might be different from those of other participants in this study, please answer the following questions.
           </div>
+          <br/>
           <div>
             <div style={{ color: "#1c1c1c" }}>Please indicate your gender:</div>
             <div>
@@ -116,9 +117,9 @@ function Screen27() {
                 <input
                   type="radio"
                   value="Female"
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                   checked={gender === "Female"}
                   onChange={handleGenderChange}
-                  style={{ marginRight: "0.5rem" }}
                 />
                 Female
               </label>
@@ -128,7 +129,7 @@ function Screen27() {
                   value="Non-Binary"
                   checked={gender === "Non-Binary"}
                   onChange={handleGenderChange}
-                  style={{ marginRight: "0.5rem" }}
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                 />
                 Non-Binary
               </label>
@@ -138,7 +139,7 @@ function Screen27() {
                   value="Self-Define"
                   checked={gender === "Self-Define"}
                   onChange={handleGenderChange}
-                  style={{ marginRight: "0.5rem" }}
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                 />
                 I prefer to self-define: <input
                   type="text"
@@ -153,7 +154,7 @@ function Screen27() {
                   value="Prefer not to say"
                   checked={gender === "Prefer not to say"}
                   onChange={handleGenderChange}
-                  style={{ marginRight: "0.5rem" }}
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                 />
                 I prefer not to say
               </label>
@@ -162,7 +163,6 @@ function Screen27() {
 
           <div>
             <div style={{ color: "#1c1c1c" }}>Please indicate your age (in years):</div>
-            <br/>
             <input
               type="number"
               value={age}
@@ -178,10 +178,9 @@ function Screen27() {
               }}
             />
           </div>
-
+          <br/>
           <div>
             <div style={{ color: "#1c1c1c" }}>Please indicate the number of months of your full-time or part-time work experience :</div>
-            <br/>
             <input
               type="number"
               value={workExperience}
@@ -197,10 +196,10 @@ function Screen27() {
               }}
             />
           </div>
+          <br/>
 
           <div>
             <div style={{ color: "#1c1c1c" }}>Please indicate the number of months of your full-time or part-time work experience specifically in the food industry :</div>
-            <br/>
             <input
               type="number"
               value={foodIndustryExperience}
@@ -216,6 +215,7 @@ function Screen27() {
               }}
             />
           </div>
+          <br/>
 
           <div
             style={{

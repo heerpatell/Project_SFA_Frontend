@@ -93,7 +93,7 @@ function Screen25() {
           <textarea
             value={response}
             onChange={handleResponse}
-            rows="3"
+            rows="13"
             style={{
               width: "100%",
               padding: "0.5rem",
@@ -109,9 +109,9 @@ function Screen25() {
               cursor: response?'pointer':'not-allowed',
               margin: 'auto',
               marginTop: '2rem',
-              width: '5rem',
+              width: '8rem',
               borderRadius: '0.2rem',
-              height: '3rem',
+              height: '4rem',
               fontSize: '2.3rem',
               color: 'aliceblue',
               backgroundColor: '#1c1c1c',
