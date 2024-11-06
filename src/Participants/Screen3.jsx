@@ -101,6 +101,7 @@ function Screen3() {
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
             <input
               type="checkbox"
+              size={20}
               checked={isChecked}
               onChange={handleCheckboxChange}
               style={{ marginRight: '0.5rem' }}

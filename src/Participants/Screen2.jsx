@@ -39,7 +39,7 @@ function Screen2() {
           color:'#1c1c1c',
             display:'flex',
             justifyContent:'center',
-            fontSize:'1.8rem',
+            fontSize:'2.3rem',
             alignItems:'center',
             height:'100%',
             textAlign:'left'
@@ -51,14 +51,14 @@ function Screen2() {
             gap:'1rem',
           }}>
             <div style={{textAlign:'center', fontSize:'3rem', marginBottom:'1rem', color:'#1c1c1c'}}><u><b>BACKGROUND</b></u></div>
-            <div style={{fontSize:'1.2rem', color:'#1c1c1c'}}><b>Role</b></div>
+            <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Role</b></div>
             <div>Imagine a restaurant situated in a typical urban setting. The restaurant attracts customers with diverse needs and preferences, so the menu has a wide variety of options. </div>
             <div>In this restaurant setting, you will be randomly assigned the role of <u><b>Worker</b></u> or <u><b>Customer</b></u>. </div>
             <div>Your role will remain <b>unchanged</b> throughout the study. </div>
-            <div style={{fontSize:'1.2rem', color:'#1c1c1c'}}><b>Rounds and Dyads</b></div>     
+            <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Rounds and Dyads</b></div>     
             <div>There will be 10 rounds in this study</div>  
             <div>In each round, you will be randomly paired with another participant in your session to form a Customer-Worker dyad. That is, if you are a Customer, then you will be paired with a Worker. If you are a Worker, then you will be paired with a Customer. You will be randomly paired with a <b>different</b> participant in your session to form a <b>new</b> Customer-Worker dyad after each round. </div>
-            <div style={{fontSize:'1.2rem', color:'#1c1c1c'}}><b>Earnings</b></div>
+            <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Earnings</b></div>
             <div>During this study, your earnings will be paid in ‘tokens’ that will be converted to Canadian Dollars when you exit. Specifically, you will earn tokens based on your decisions and the decisions of the other participants you are paired with in each round. Your compensation depends on the total amount of tokens you <b>earn over all rounds</b>. At the end of the study, we will convert your tokens into actual Canadian Dollars at the rate of <b>100 tokens = $0.90 CND</b>. Thus, the more tokens you earn in each round, the more money you will receive at the end of the study.</div>
             <div>Please click ‘Next’ to continue.</div>
             <div style={{
