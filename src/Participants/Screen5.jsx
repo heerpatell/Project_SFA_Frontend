@@ -54,7 +54,7 @@ const [showPost, setShowPost] = useState(false)
         style={{
           backgroundColor: "aliceblue",
           padding:'3.5rem',
-          height:'100%',
+          minHeight:'100vh',
           color: "#1c1c1c",
           display: "flex",
             flexDirection: "column",
@@ -64,8 +64,8 @@ const [showPost, setShowPost] = useState(false)
       >
         <div
           style={{
-            width:'50rem',
-            height:'100%',
+            width:'80rem',
+            height:'max-contnet',
             display: "flex",
             flexDirection: "column",
             gap:'1.4rem'

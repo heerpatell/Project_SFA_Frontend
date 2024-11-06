@@ -34,7 +34,7 @@ function Screen2() {
     <>
         <div style={{
           backgroundColor:'aliceblue',
-          height:'100%',
+          minHeight:'100vh',
           padding:'2rem 0',
           color:'#1c1c1c',
             display:'flex',
@@ -45,7 +45,8 @@ function Screen2() {
             textAlign:'left'
           }}>
           <div style={{
-            width:'65rem',
+            width:'80rem',
+            height:'max-content',
             display:'flex',
             flexDirection:'column',
             gap:'1rem',

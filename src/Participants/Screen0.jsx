@@ -250,7 +250,7 @@ old.</div>
                 gap: "1rem",
               }}
             >
-              <div style={{ display: "flex", gap: "0.5rem" }}>
+              <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
                 <input
                   name="consent"
                   type="radio"
@@ -262,7 +262,7 @@ old.</div>
                 <label>I Agree</label>
               </div>
 
-              <div style={{ display: "flex", gap: "0.5rem" }}>
+              <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
                 <input
                   name="consent"
                   size={40}

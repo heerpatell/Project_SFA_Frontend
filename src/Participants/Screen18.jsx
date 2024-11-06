@@ -132,7 +132,7 @@ function Screen18() {
       >
         <div
           style={{
-            width: "65rem",
+            width: "80rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

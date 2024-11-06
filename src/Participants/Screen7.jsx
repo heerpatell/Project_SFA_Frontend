@@ -51,7 +51,7 @@ function Screen7() {
     <>
       <div
         style={{
-          height: "max-content",
+          minHeight:'100vh',
           padding:'2rem',
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
@@ -63,8 +63,8 @@ function Screen7() {
       >
         <div
           style={{
-            width: "65rem",
-            height:'100%',
+            width: "80rem",
+            height: "max-content",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

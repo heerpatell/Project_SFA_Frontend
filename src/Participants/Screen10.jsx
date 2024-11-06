@@ -40,7 +40,7 @@ function Screen10() {
     <>
       <div
         style={{
-          height: "100vh",
+          minHeight: "100vh",
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
           display: "flex",
@@ -50,7 +50,8 @@ function Screen10() {
       >
         <div
           style={{
-            width: "65rem",
+            width: "80rem",
+            height:'max-content',
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

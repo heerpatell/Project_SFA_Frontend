@@ -80,7 +80,7 @@ function Screen15() {
       >
         <div
           style={{
-            width: "63rem",
+            width: "80rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

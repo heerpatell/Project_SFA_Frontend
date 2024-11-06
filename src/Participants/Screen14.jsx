@@ -209,7 +209,7 @@ function Screen14() {
     <>
       <div
         style={{
-          height: "100%",
+          minHeight: "100vh",
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
           display: "flex",
@@ -220,9 +220,9 @@ function Screen14() {
       >
         <div
           style={{
-            width: "65rem",
+            width: "80rem",
             display: "flex",
-            height:'100%',
+            height:'max-content',
             flexDirection: "column",
             gap: "1.4rem",
             fontSize: "2.3rem",

@@ -49,7 +49,7 @@ function Screen6() {
   return (
     <div
       style={{
-        height: "100%",
+        minHeight:'100vh',
         padding:'2rem 0',
         backgroundColor: "aliceblue",
         color: "#1c1c1c",
@@ -60,7 +60,8 @@ function Screen6() {
     >
       <div
         style={{
-          width: "65rem",
+          height:'max-content',
+          width: "80rem",
           display: "flex",
           flexDirection: "column",
           gap: "1.4rem",

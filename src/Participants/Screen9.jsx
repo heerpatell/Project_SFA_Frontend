@@ -64,7 +64,7 @@ function Screen9() {
   return (
     <>
     <div style={{
-          height: "100vh",
+          minHeight: "100vh",
           backgroundColor: "aliceblue",
           color: "#1c1c1c",
           display: "flex",
@@ -72,7 +72,8 @@ function Screen9() {
           alignItems: "center",
         }}>
         <div style={{
-            width: "65rem",
+          height:'max-content',
+            width: "80rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",

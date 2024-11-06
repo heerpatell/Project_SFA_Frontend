@@ -122,7 +122,7 @@ function AdminDashboard() {
               style={{
                 backgroundColor: "transparent",
                 color: "black",
-                width: "25rem",
+                width: "21rem",
                 padding: "0.5rem",
                 fontSize: "2.3rem",
                 border: "1px solid black",
