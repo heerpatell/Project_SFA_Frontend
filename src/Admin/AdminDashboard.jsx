@@ -109,7 +109,7 @@ function AdminDashboard() {
             <label
               style={{
                 color: "black",
-                fontSize: "1.3rem",
+                fontSize: "2.3rem",
                 letterSpacing: "0.05rem",
               }}
             >
@@ -124,7 +124,7 @@ function AdminDashboard() {
                 color: "black",
                 width: "12rem",
                 padding: "0.5rem",
-                fontSize: "1.1rem",
+                fontSize: "2.3rem",
                 border: "1px solid black",
                 outline: "none",
               }}
@@ -163,7 +163,7 @@ function AdminDashboard() {
                 style={{
                   cursor: "pointer",
                   color: "#6AD4DD",
-                  fontSize: "1.4rem",
+                  fontSize: "2.3rem",
                 }}
               />
             </div>
@@ -173,7 +173,7 @@ function AdminDashboard() {
               <div
                 style={{
                   color: "white",
-                  fontSize: "1.3rem",
+                  fontSize: "2.3rem",
                   marginTop: "1rem",
                   textAlign: "center",
                 }}
