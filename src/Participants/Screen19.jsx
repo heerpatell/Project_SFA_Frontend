@@ -520,8 +520,9 @@ function Screen19() {
   };
 
   const thStyle = {
+    fontSize:'2.3rem',
     border: "1px solid #1c1c1c",
-    padding: "1rem 1.5rem",
+    padding: "2.5rem 2rem",
     textAlign: "center",
     color: "aliceblue",
     opacity: "0.5",
@@ -530,7 +531,7 @@ function Screen19() {
 
   const tdStyle = {
     border: "1px solid #1c1c1c",
-    padding: "1rem 1.5rem",
+    padding: "2.5rem 2rem",
     textAlign: "center",
   };
 

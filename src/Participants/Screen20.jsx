@@ -424,8 +424,9 @@ function Screen20() {
 
   const thStyle = {
     border: "1px solid #1c1c1c",
-    padding: "1rem 1.5rem",
+    padding: "2.5rem 2rem",
     textAlign: "center",
+    fontSize:'2.3rem',
     color:'aliceblue',
     opacity:'0.5',
     backgroundColor: "#333333",
@@ -433,7 +434,7 @@ function Screen20() {
 
   const tdStyle = {
     border: "1px solid #1c1c1c",
-    padding: "1rem 1.5rem",
+    padding: "2.5rem 2rem",
     textAlign: "center",
   };
 

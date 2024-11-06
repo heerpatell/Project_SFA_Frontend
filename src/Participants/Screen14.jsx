@@ -582,7 +582,7 @@ function Screen14() {
                 <div
                   style={{
                     cursor: effortlevel >= 0.1 && effortlevel <= 1.0 ? "pointer" : "not-allowed",
-                    opacity: effortlevel ? 1 : 0.5,
+                    opacity: effortlevel >= 0.1 && effortlevel <= 1.0 ? 1 : 0.5,
                     margin: "auto",
                     marginTop: "2rem",
                     width: "8rem",
