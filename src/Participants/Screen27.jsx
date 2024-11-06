@@ -109,7 +109,7 @@ function Screen27() {
                   value="Male"
                   checked={gender === "Male"}
                   onChange={handleGenderChange}
-                  style={{ marginRight: "0.5rem" }}
+                  style={{ marginRight: '0.5rem' , width: '20px', height: '20px'}}
                 />
                 Male
               </label>
@@ -145,7 +145,7 @@ function Screen27() {
                   type="text"
                   value={gender === "Self-Define" ? gender : ""}
                   onChange={(e) => setGender(e.target.value)}
-                  style={{ marginLeft: "0.5rem", border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
+                  style={{ marginLeft: "0.5rem", width: '20px', height: '20px', border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
                 />
               </label>
               <label style={{ display: "block", marginBottom: "0.5rem" }}>
@@ -169,12 +169,13 @@ function Screen27() {
               onChange={handleAgeChange}
               min={0}
               style={{
-                width: "10%",
                 padding: "0.5rem",
+                fontSize:'2.3rem',
                 borderRadius: "5px",
                 border: "1px solid #ccc",
                 backgroundColor: "white",
                 color: "#1c1c1c",
+                width: '20px', height: '20px'
               }}
             />
           </div>
@@ -187,7 +188,8 @@ function Screen27() {
               onChange={handleWorkExperienceChange}
               min={0}
               style={{
-                width: "10%",
+width: '20px', height: '20px',
+fontSize:'2.3rem',
                 padding: "0.5rem",
                 borderRadius: "5px",
                 border: "1px solid #ccc",
@@ -206,7 +208,8 @@ function Screen27() {
               onChange={handleFoodIndustryExperienceChange}
               min={0}
               style={{
-                width: "10%",
+                width: '20px', height: '20px',
+                fontSize:'2.3rem',
                 padding: "0.5rem",
                 borderRadius: "5px",
                 border: "1px solid #ccc",

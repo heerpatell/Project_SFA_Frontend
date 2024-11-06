@@ -501,7 +501,7 @@ function Screen14() {
                   >
                     <div>
                       In this round, the Customer that you are paired with has{" "}
-                      chosen to tip you: <div style={{fontSize:'2.3rem'}}><b>{tip}</b></div>
+                      chosen to tip you: <p style={{fontSize:'3rem'}}><b>{tip}</b></p>
                     </div>
                     <div>Tip Paid to the Worker: {tip}</div>
                   </div>

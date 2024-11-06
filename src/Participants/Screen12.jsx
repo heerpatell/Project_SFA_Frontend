@@ -85,10 +85,13 @@ useEffect(()=>{
             <div style={{color:'#1c1c1c'}}>Payoff = 60 + Satisfaction from Worker's service - Tip paid to the Worker</div>
             <div>where,</div>
             <div style={{color:'#1c1c1c'}}>Satisfaction from Worker's Service = Worker Effort Level * 200</div>
+            <br/>
             <div>In each round, your payoff is determined by your level of satisfaction with the Worker’s service minus the tip paid to the Worker. Your level of satisfaction with the Worker’s service is determined by the Worker’s effort level. That is, the higher the effort level the Worker chooses to serve you, the higher your level of satisfaction with the Worker’s service. 
             </div>
+            <br/>
             <div>Please note that you will decide how much to tip the Worker in each round. The amount of tip can range from zero up to 80 tokens. That is, you can tip nothing, can tip a maximum of 80 tokens, or can tip anywhere in between. Importantly, you tip the Worker before he/she serves you. 
             </div>
+            <br/>
           </div>
 
           <div style={{             
