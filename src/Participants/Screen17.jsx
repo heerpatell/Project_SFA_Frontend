@@ -106,7 +106,7 @@ return (
           padding: "2rem",
         }}>
         <div style={{
-            width: "190rem",
+            width: "100rem",
             display: "flex",
             flexDirection: "column",
             gap: "1.4rem",
@@ -118,14 +118,16 @@ return (
               textAlign: "center",
             }}>
               <div style={{fontSize:'3rem'}}>
-                {
-                  (currentround == 'Practice Round') && (
-                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b></u>
-                  )
-                  (currentround != 'Practice Round') && (
-                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u>
-                  )
-                }
+              <u style={{ textTransform: "uppercase" }}>
+            {
+      currentround === 'Practice Round' ? (
+        <b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>              
+
                 </div>
               <div style={{
                 fontSize: "2.3rem",

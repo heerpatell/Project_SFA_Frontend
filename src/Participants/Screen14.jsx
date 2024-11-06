@@ -341,6 +341,7 @@ function Screen14() {
                   compensation they will receive.
                 </div>
               </div>
+              <br/>
               <div
                 style={{
                   fontSize: "2.3rem",
@@ -505,6 +506,7 @@ function Screen14() {
                   </div>
                 </div>
               )}
+              <br/>
               <div>
                 <div
                   style={{

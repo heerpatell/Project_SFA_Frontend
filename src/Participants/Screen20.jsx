@@ -488,14 +488,13 @@ function Screen20() {
               textAlign: "center",
             }}
           >
-            {
-          (currentround == 'Practice Round') && (
-            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | {currentround}</b></u>
-          )
-          (currentround != 'Practice Round') && (
-            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
-          )
-        }
+                        <u style={{ textTransform: "uppercase" }}>
+              {currentround === "Practice Round" ? (
+                <b>CUMULATIVE RESULTS &nbsp;|&nbsp; {currentround}</b>
+              ) : (
+                <b>CUMULATIVE RESULTS &nbsp;|&nbsp; ROUND {currentround}</b>
+              )}
+            </u>
                      </div>
           <br/>
           <br/>

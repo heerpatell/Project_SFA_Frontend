@@ -147,15 +147,17 @@ function Screen18() {
             }}
           >
             <div style={{fontSize:'3rem'}}>
-              
+
+            <u style={{ textTransform: "uppercase" }}>
             {
-                  (currentround == 'Practice Round') && (
-                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b></u>
-                  )
-                  (currentround != 'Practice Round') && (
-                    <u style={{textTransform:'uppercase'}}><b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b></u>
-                  )
-                }
+      currentround === 'Practice Round' ? (
+        <b>COMPENSATION OUTCOMES &nbsp;|&nbsp; {currentround}</b>
+      ) : (
+        <b>COMPENSATION OUTCOMES &nbsp;|&nbsp; ROUND {currentround}</b>
+      )
+    }
+            </u>              
+
               </div>
             <div
               style={{

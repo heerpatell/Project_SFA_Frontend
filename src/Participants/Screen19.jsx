@@ -285,7 +285,7 @@ function Screen19() {
         }
       );
       setFetchedData(res.data.matches.matches);
-      console.log(293, condition)
+      console.log(293, condition);
       if (condition == "Fixed Condition") {
         console.log(262, res.data.matches.matches);
         if (!res.data.matches.matches) return;
@@ -400,7 +400,7 @@ function Screen19() {
           );
 
           if (!roundData) return 0;
-          
+
           const effortTokens = Number(effortToTokens[roundData.effort]) || 0;
           const totalComp = 160 + roundData.pretip - effortTokens;
           console.log(322, effortTokens);
@@ -523,8 +523,8 @@ function Screen19() {
     border: "1px solid #1c1c1c",
     padding: "0.5rem 1rem",
     textAlign: "center",
-    color:'aliceblue',
-    opacity:'0.5',
+    color: "aliceblue",
+    opacity: "0.5",
     backgroundColor: "#333333",
   };
 
@@ -535,17 +535,17 @@ function Screen19() {
   };
 
   const buttonStyle = {
-    cursor: 'pointer',
-    marginTop: '2rem',
-    width: '8rem',
-    borderRadius: '0.2rem',
-    height: '4rem',
-    fontSize: '2.3rem',
-    color: 'aliceblue',
-    backgroundColor: '#1c1c1c',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'  
+    cursor: "pointer",
+    marginTop: "2rem",
+    width: "8rem",
+    borderRadius: "0.2rem",
+    height: "4rem",
+    fontSize: "2.3rem",
+    color: "aliceblue",
+    backgroundColor: "#1c1c1c",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   };
 
   return (
@@ -553,21 +553,20 @@ function Screen19() {
       <div
         style={{ textAlign: "center", fontSize: "3rem", paddingBottom: "1rem" }}
       >
-        <u style={{textTransform:'capitalize'}}>
-        <b>
-        {
-          (currentround == 'Practice Round') && (
-            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | {currentround}</b></u>
-          )
-          (currentround != 'Practice Round') && (
-            <u style={{textTransform:'uppercase'}}><b>CUMULATIVE RESULTS | ROUND {currentround}</b></u>
-          )
-        }
+        <u style={{ textTransform: "capitalize" }}>
+          <b>
+            <u style={{ textTransform: "uppercase" }}>
+              {currentround === "Practice Round" ? (
+                <b>CUMULATIVE RESULTS &nbsp;|&nbsp; {currentround}</b>
+              ) : (
+                <b>CUMULATIVE RESULTS &nbsp;|&nbsp; ROUND {currentround}</b>
+              )}
+            </u>
           </b>
         </u>
       </div>
-      <br/>
-      <br/>
+      <br />
+      <br />
       {showFC && (
         <div>
           <table style={tableStyle}>
@@ -581,13 +580,13 @@ function Screen19() {
             </thead>
             <tbody>{renderTable()}</tbody>
           </table>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a {lastRoundCumulativeComp} tokens in{" "}
             {currentround} round(s).
           </div>
-          <br/>
+          <br />
         </div>
       )}
       {showSC && (
@@ -604,13 +603,13 @@ function Screen19() {
             </thead>
             <tbody>{renderTableSC()}</tbody>
           </table>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
-          <br/>
+          <br />
         </div>
       )}
       {showPre && (
@@ -628,13 +627,13 @@ function Screen19() {
             </thead>
             <tbody>{renderTablePre()}</tbody>
           </table>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
-          <br/>
+          <br />
         </div>
       )}
 
@@ -653,13 +652,13 @@ function Screen19() {
             </thead>
             <tbody>{renderTablePost()}</tbody>
           </table>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
-          <br/>
+          <br />
         </div>
       )}
       <div style={buttonStyle} onClick={() => clickedNext()}>
