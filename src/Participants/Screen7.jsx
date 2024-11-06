@@ -100,24 +100,27 @@ function Screen7() {
               </div>
             )}
           </div>
+          <br/>
           <div>
           Please note that Workers will not be informed of your level of satisfaction with their service or your total payoff in each round.  
           </div>
+          <br/>
           {
             showSC && (<div>
-              However, Workers will be informed of the amount of the service charge you pay them.
+              However, Workers will be informed of the amount of the service charge you pay them.<br/>
             </div>)
           }
           {
             showPre && (<div>
-              However, Workers will be informed of the amount of the tip you pay them.
+              However, Workers will be informed of the amount of the tip you pay them.<br/>
             </div>)
           }
           {
             showPost && (<div>
-              However, Workers will be informed of the amount of the tip you pay them.
+              However, Workers will be informed of the amount of the tip you pay them.<br/>
             </div>)
           }
+          
           <div>Please click ‘Next’ to continue.</div>
           <div
             style={{

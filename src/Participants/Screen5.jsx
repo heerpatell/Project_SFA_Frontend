@@ -173,9 +173,8 @@ const [showPost, setShowPost] = useState(false)
                         </div>
                     )
                 }
-
-                <div style={{color:'#1c1c1c',fontSize:'2.3rem'}}><b>Workers’ Cost of Effort and Compensation</b></div>
                 <br/>
+                <div style={{color:'#1c1c1c',fontSize:'2.3rem'}}><b>Workers’ Cost of Effort and Compensation</b></div>
                 <div>Importantly, <b>Workers’ cost of effort increases with their effort levels.</b> The higher the effort levels they choose to serve you, the higher their cost of effort. At the end of this study, Workers’ cost of effort will determine their compensation. The higher the Workers’ cost of effort, the <b>lower</b> the compensation they will receive.</div>
                 <br/>
                 {

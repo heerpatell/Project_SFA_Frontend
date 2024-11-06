@@ -238,10 +238,10 @@ function Screen14() {
             <u style={{ textTransform: "uppercase" }}>
             {
               (currentround == 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; {currentround}</b></u>
+                <u><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; {currentround}</b></u>
               )
               (currentround != 'Practice Round') && (
-                <u style={{textTransform:'uppercase'}}><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; ROUND {currentround}</b></u>
+                <u><b>WORKER EFFORT CHOICE &nbsp;|&nbsp; ROUND {currentround}</b></u>
               )
             }
             </u>

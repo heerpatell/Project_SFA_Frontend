@@ -49,7 +49,7 @@ function Screen1() {
             gap:'2.3rem'
         }}>
             <div style={{
-              width:'65rem',
+              width:'100rem',
               textAlign:'left'
             }}>
             <div style={{padding:'1.5rem 0', fontSize:'3rem', color:'#1c1c1c', textAlign:'center'}}><u><b>INTRODUCTION</b></u></div>
@@ -57,12 +57,15 @@ function Screen1() {
             <div style={{padding:'0.5rem 0'}}>
             This study involves decision making in groups. The amount of money you will earn depends on the decisions that you and others make. Please read all instructions carefully.
             </div>
+            <br/>
             <div style={{padding:'0.5rem 0'}}>
             We ask that you refrain from creating any distractions while you are participating in this study. There will be moments when you will have to wait for the others to complete a particular phase of the study. Please be patient during these moments.
             </div>
+            <br/>
             <div style={{padding:'0.5rem 0'}}>
             We promise to carry out the study in the manner described in the instructions, with no deception of any form. We promise that your rewards will be calculated exactly as described in the instructions that follow. 
             </div>
+            <br/>
             <div style={{padding:'1rem 0'}}>
             Please click on 'Next' to start the study.
             </div>

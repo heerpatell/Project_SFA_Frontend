@@ -198,8 +198,8 @@ const clickedNext = async () => {
                 }
             </div>
 
-            <div>Please click ‘Next’ to continue.</div>
             <br/>
+            <div>Please click ‘Next’ to continue.</div>
             <div style={{
             display:'flex',
               justifyContent:'center'
