@@ -30,6 +30,12 @@ function Screen27() {
     const userResp = {
       gender, age, workExperience, foodIndustryExperience,pnumber,  'token': localStorage.getItem('token')
     }
+    await axios.post(`${REACT_APP_BACKEND_URL}/generate/postamount`,{'token':localStorage.getItem('token'), lastRoundCumulativeComp, pnumber, condition} ,{
+      withCredentials: true,
+    })
+    .then((res)=>{
+  
+    })
     await axios.post(`${REACT_APP_BACKEND_URL}/generate/postanswersfrom27`,userResp,{withCredentials:true})
     .then((res)=>{
       console.log(35,res)
@@ -145,7 +151,7 @@ function Screen27() {
                   type="text"
                   value={gender === "Self-Define" ? gender : ""}
                   onChange={(e) => setGender(e.target.value)}
-                  style={{ marginLeft: "0.5rem", width: '20px', height: '70px', border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
+                  style={{ marginLeft: "0.5rem", width: '200px', height: '40px', border: "1px solid #ccc", borderRadius: "5px", padding: "0.2rem" }}
                 />
               </label>
               <label style={{ display: "block", marginBottom: "0.5rem" }}>
@@ -169,13 +175,13 @@ function Screen27() {
               onChange={handleAgeChange}
               min={0}
               style={{
-                padding: "0.5rem",
+                padding: "1rem",
                 fontSize:'2.3rem',
                 borderRadius: "5px",
                 border: "1px solid #ccc",
                 backgroundColor: "white",
                 color: "#1c1c1c",
-                width: '70px', height: '20px'
+                width: '100px', height: '40px'
               }}
             />
           </div>
@@ -188,9 +194,9 @@ function Screen27() {
               onChange={handleWorkExperienceChange}
               min={0}
               style={{
-width: '70px', height: '20px',
+width: '100px', height: '40px',
 fontSize:'2.3rem',
-                padding: "0.5rem",
+                padding: "1rem",
                 borderRadius: "5px",
                 border: "1px solid #ccc",
                 backgroundColor: "white",
@@ -208,9 +214,9 @@ fontSize:'2.3rem',
               onChange={handleFoodIndustryExperienceChange}
               min={0}
               style={{
-                width: '70px', height: '20px',
+                width: '100px', height: '40px',
                 fontSize:'2.3rem',
-                padding: "0.5rem",
+                padding: "1rem",
                 borderRadius: "5px",
                 border: "1px solid #ccc",
                 backgroundColor: "white",

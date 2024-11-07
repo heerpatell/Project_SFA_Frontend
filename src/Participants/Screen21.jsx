@@ -45,12 +45,6 @@ function Screen21() {
 
 const clickedNext = async() =>{
   console.log(30, pnumber, condition)
-  await axios.post(`${REACT_APP_BACKEND_URL}/generate/postamount`,{'token':localStorage.getItem('token'), lastRoundCumulativeComp, pnumber, condition} ,{
-    withCredentials: true,
-  })
-  .then((res)=>{
-
-  })
   const categoryRes = await axios.post(`${REACT_APP_BACKEND_URL}/generate/getassignedcategory`, { pnumber, 'token': localStorage.getItem('token') }, { withCredentials: true });
   if(categoryRes.data.assignedCategory === 'Customer'){
     if(showPre || showPost){
