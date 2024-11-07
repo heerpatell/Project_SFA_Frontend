@@ -508,6 +508,7 @@ function Screen14() {
                 </div>
               )}
               <div>
+                <br/>
                 <div
                   style={{
                     fontSize: "2.3rem",
