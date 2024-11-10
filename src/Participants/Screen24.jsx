@@ -127,7 +127,7 @@ function Screen24() {
     if (isNextEnabled) {
       console.log("Responses:", responses);
       await saveResponses();
-      navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+      navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
     }
   };
 

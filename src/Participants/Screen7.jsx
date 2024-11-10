@@ -120,7 +120,7 @@ function Screen7() {
               However, Workers will be informed of the amount of the tip you pay them.<br/>
             </div>)
           }
-          
+          <br/>
           <div>Please click ‘Next’ to continue.</div>
           <div
             style={{

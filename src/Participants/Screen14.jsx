@@ -424,7 +424,7 @@ function Screen14() {
                   </div>
                   <div>
                     In each round, you will be paid{" "}
-                    <b>a fixed wage of 160 tokens</b>
+                    <b>a fixed wage of 160 tokens</b>{" "}
                     by the restaurant. Please note that this fixed wage is the{" "}
                     <b>standard</b> wage paid at similar restaurants. In{" "}
                     addition, Customers pay you <b>tips</b> for serving them,{" "}
@@ -501,9 +501,8 @@ function Screen14() {
                   >
                     <div>
                       In this round, the Customer that you are paired with has{" "}
-                      chosen to tip you: <p style={{fontSize:'3rem'}}><b>{tip}</b></p>
+                      chosen to tip you: <span style={{fontSize:'3rem'}}><b>{tip}</b></span>
                     </div>
-                    <div>Tip Paid to the Worker: {tip}</div>
                   </div>
                 </div>
               )}
@@ -530,12 +529,12 @@ function Screen14() {
                     As a Worker, you can choose an effort level between 0.1 and{" "}
                     1.0 (inclusive).{" "}
                   </div>
-                  {/* <div>Please make your choice: </div>
+                  <div>Please make your choice: </div>
                   <div style={{ color: "#1c1c1c" }}>
                     <b>
                       How much effort level do you choose to serve the customer?
                     </b>
-                  </div> */}
+                  </div>
                   <div>
                     <input
                       style={{

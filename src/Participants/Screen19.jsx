@@ -516,13 +516,13 @@ function Screen19() {
   const tableStyle = {
     width: "100%",
     borderCollapse: "collapse",
-    marginBottom: "1.5rem",
+    marginBottom: "0.5rem",
   };
 
   const thStyle = {
     fontSize:'2.3rem',
     border: "1px solid #1c1c1c",
-    padding: "2.5rem 2rem",
+    padding: "0.5rem 2rem",
     textAlign: "center",
     color: "aliceblue",
     opacity: "0.5",
@@ -531,7 +531,7 @@ function Screen19() {
 
   const tdStyle = {
     border: "1px solid #1c1c1c",
-    padding: "2.5rem 2rem",
+    padding: "0.5rem 2rem",
     fontSize: "2.3rem",
     textAlign: "center",
   };
@@ -553,7 +553,7 @@ function Screen19() {
   return (
     <div style={containerStyle}>
       <div
-        style={{ textAlign: "center", fontSize: "3rem", paddingBottom: "1rem", height:'max-content' }}
+        style={{ textAlign: "center", fontSize: "2rem", paddingBottom: "1rem", height:'max-content' }}
       >
         <u style={{ textTransform: "capitalize" }}>
           <b>
@@ -584,7 +584,7 @@ function Screen19() {
           </table>
           <br />
           <br />
-          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
             As Worker, you have earned a {lastRoundCumulativeComp} tokens in{" "}
             {currentround} round(s).
           </div>
@@ -607,7 +607,7 @@ function Screen19() {
           </table>
           <br />
           <br />
-          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
@@ -631,7 +631,7 @@ function Screen19() {
           </table>
           <br />
           <br />
-          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>
@@ -656,7 +656,7 @@ function Screen19() {
           </table>
           <br />
           <br />
-          <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+          <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
             As Worker, you have earned a total of {lastRoundCumulativeComp}{" "}
             tokens in {currentround} round(s).
           </div>

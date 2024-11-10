@@ -419,12 +419,12 @@ function Screen20() {
   const tableStyle = {
     width: "100%",
     borderCollapse: "collapse",
-    marginBottom: "1.5rem",
+    marginBottom: "0.5rem",
   };
 
   const thStyle = {
     border: "1px solid #1c1c1c",
-    padding: "2.5rem 2rem",
+    padding: "0.5rem 2rem",
     textAlign: "center",
     fontSize:'2.3rem',
     color:'aliceblue',
@@ -434,7 +434,7 @@ function Screen20() {
 
   const tdStyle = {
     border: "1px solid #1c1c1c",
-    padding: "2.5rem 2rem",
+    padding: "0.5rem 2rem",
     fontSize: "2.3rem",
     textAlign: "center",
   };
@@ -485,7 +485,7 @@ function Screen20() {
         <>
           <div
             style={{
-              fontSize: "3rem",
+              fontSize: "2rem",
               paddingBottom: "1rem",
               textAlign: "center",
             }}
@@ -515,7 +515,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -538,7 +538,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -561,7 +561,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
                 As a Customer, you have earned a total of{" "}
                 {lastRoundCumulativeComp} tokens in {currentround} round(s).
               </div>
@@ -584,7 +584,7 @@ function Screen20() {
               </table>
               <br/>
               <br/>
-              <div style={{ fontSize: "2.3rem", paddingBottom: "1rem" }}>
+              <div style={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
                 As a Customer, you have earned a total of {lastRoundCumulativeComp} tokens
                 in {currentround} round(s).
               </div>

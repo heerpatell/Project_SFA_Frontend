@@ -263,11 +263,7 @@ function Screen15() {
                 <div style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>Worker Effort Level</b></div>
                 <div>
                   In this round, the Worker that you are paired with has chosen
-                  the effort level:
-                </div>
-                <div>
-                  <b>Worker Effort Level:{" "}
-                  <span style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>{effort}</b></span></b>
+                  the effort level: <b><span style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>{effort}</b></span></b>
                 </div>
               </div>
 

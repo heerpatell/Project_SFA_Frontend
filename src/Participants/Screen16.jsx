@@ -152,9 +152,9 @@ function Screen16() {
             <u style={{ textTransform: "uppercase" }}>
             {
       currentround === 'Practice Round' ? (
-        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; {currentround}</b>
+        <b>TIPPING DECISION &nbsp;|&nbsp; {currentround}</b>
       ) : (
-        <b>CUSTOMER PAYOFF &nbsp;|&nbsp; ROUND {currentround}</b>
+        <b>TIPPING DECISION &nbsp;|&nbsp; ROUND {currentround}</b>
       )
     }
             </u>
@@ -175,10 +175,10 @@ function Screen16() {
               </div>
               <div>
                 You need to decide how much to tip the Worker for their service
-                after they has chosen an effort level to serve you. The amount
+                after they have chosen an effort level to serve you. The amount
                 of tip can range from zero up to 80 tokens (rounded to the
                 nearest whole number). The Worker will be informed of the tip
-                you pay after they has made their choice of effort level.
+                you pay after they have made their choice of effort level.
               </div>
               <div
                   style={{
@@ -192,11 +192,7 @@ function Screen16() {
                 </div>
                 <div>
                   In this round, the Worker that you are paired with has chosen
-                  the effort level:
-                </div>
-                <div>
-                  Worker Effort Level:{" "}
-                  <span style={{ color: "#1c1c1c" }}>{effortLevel}</span>
+                  the effort level: <b><span style={{ color: "#1c1c1c" }}>{effortLevel}</span></b>
                 </div>
 
                 <div

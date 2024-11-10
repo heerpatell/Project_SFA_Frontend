@@ -140,7 +140,7 @@ function Screen8() {
             errorMessage: 'Your selection is incorrect. The Customer will only learn Worker’s choice of EFFORT LEVEL to serve the Customer. They will NOT learn Worker’s cost of effort level or Worker’s compensation.',
         },
         {
-            question: 'In each round, Workers will be informed of',
+            question: 'In each round, Workers will be informed of:',
             options: [
                 'Customers’ level of satisfaction with the service',
                 'How much Customers tip the Workers',
