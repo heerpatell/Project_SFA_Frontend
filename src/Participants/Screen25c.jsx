@@ -92,9 +92,10 @@ function Screen25c() {
           <textarea
             value={response}
             onChange={handleResponse}
-            rows="3"
+            rows="13"
             style={{
               width: "100%",
+              fontSize:'2.3rem',
               padding: "0.5rem",
               borderRadius: "5px",
               border: "1px solid #ccc",
