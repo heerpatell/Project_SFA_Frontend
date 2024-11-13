@@ -107,27 +107,28 @@ function Screen24() {
     }
   }, [responses]);
 
-  const saveResponses = async () => {
-    try {
-      const data = {
-        pnumber, 
-        condition,
-        'token': localStorage.getItem('token'),
-        ...responses
-      };
-      await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen24`, data, {
-        withCredentials: true,
-      });
-    } catch (error) {
-      console.error("Error saving responses", error);
-    }
-  };
-
   const clickedNext = async () => {
     if (isNextEnabled) {
       console.log("Responses:", responses);
-      await saveResponses();
-      navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+
+      try {
+        const data = {
+          pnumber, 
+          condition,
+          'token': localStorage.getItem('token'),
+          ...responses
+        };
+        await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen24`, data, {
+          withCredentials: true,
+        })
+        .then((res)=>{
+          console.log(125, res.data)
+          navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+        })
+      } catch (error) {
+        console.error("Error saving responses", error);
+      }
+
     }
   };
 
