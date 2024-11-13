@@ -266,7 +266,7 @@ function Screen15() {
                   the effort level: <b><span style={{ color: "#1c1c1c", fontSize:'2.3rem' }}><b>{effort}</b></span></b>
                 </div>
               </div>
-
+                <br/>
               <div
                 style={{
                   fontSize: "2.3rem",

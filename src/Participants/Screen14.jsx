@@ -225,13 +225,13 @@ function Screen14() {
             height:'max-content',
             flexDirection: "column",
             gap: "1.4rem",
-            fontSize: "2.3rem",
+            fontSize: "2rem",
           }}
         >
           <div
             style={{
               color: "#1c1c1c",
-              fontSize: "3rem",
+              fontSize: "2rem",
               textAlign: "center",
             }}
           >
@@ -246,7 +246,7 @@ function Screen14() {
             </u>
             <div
               style={{
-                fontSize: "2.3rem",
+                fontSize: "1.8rem",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
@@ -257,7 +257,7 @@ function Screen14() {
             >
               <div
                 style={{
-                  fontSize: "2.3rem",
+                  fontSize: "1.8rem",
                   fontWeight: "800",
                   color: "#1c1c1c",
                 }}
@@ -344,7 +344,7 @@ function Screen14() {
               <br/>
               <div
                 style={{
-                  fontSize: "2.3rem",
+                  fontSize: "1.8rem",
                   fontWeight: "800",
                   color: "#1c1c1c",
                 }}
@@ -485,7 +485,7 @@ function Screen14() {
                 <div>
                   <div
                     style={{
-                      fontSize: "2.3rem",
+                      fontSize: "1.8rem",
                       fontWeight: "800",
                       color: "#1c1c1c",
                     }}
@@ -501,7 +501,7 @@ function Screen14() {
                   >
                     <div>
                       In this round, the Customer that you are paired with has{" "}
-                      chosen to tip you: <span style={{fontSize:'3rem'}}><b>{tip}</b></span>
+                      chosen to tip you: <span style={{fontSize:'2rem'}}><b>{tip}</b></span>
                     </div>
                   </div>
                 </div>
@@ -510,7 +510,7 @@ function Screen14() {
                 <br/>
                 <div
                   style={{
-                    fontSize: "2.3rem",
+                    fontSize: "1.8rem",
                     fontWeight: "800",
                     color: "#1c1c1c",
                     paddingBottom: "1rem",
@@ -529,7 +529,6 @@ function Screen14() {
                     As a Worker, you can choose an effort level between 0.1 and{" "}
                     1.0 (inclusive).{" "}
                   </div>
-                  <div>Please make your choice: </div>
                   <div style={{ color: "#1c1c1c" }}>
                     <b>
                       How much effort level do you choose to serve the customer?
@@ -543,7 +542,7 @@ function Screen14() {
                         outline: "none",
                         backgroundColor: "transparent",
                         padding: "0.5rem",
-                        fontSize: "2.3rem",
+                        fontSize: "1.8rem",
                         color: "#1c1c1c",
                         borderBottom: "1px solid #1c1c1c",
                       }}
@@ -565,7 +564,7 @@ function Screen14() {
 
               <div
                 style={{
-                  fontSize: "2.3rem",
+                  fontSize: "1.8rem",
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
@@ -588,7 +587,7 @@ function Screen14() {
                     width: "8rem",
                     borderRadius: "0.2rem",
                     height: "4rem",
-                    fontSize: "2.3rem",
+                    fontSize: "1.8rem",
                     color: "aliceblue",
                     backgroundColor: "#1c1c1c",
                     display: "flex",

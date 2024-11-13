@@ -77,10 +77,10 @@ const clickedNext = async () => {
             height:'100%',
             flexDirection:'column',
             gap:'1.5rem',
-            fontSize:'2.3rem'
+            fontSize:'1.8rem'
         }}> 
-            <div style={{fontSize:'3rem' ,color:'#1c1c1c', textAlign:'center'}}><u><b>WORKER COMPENSATION</b></u></div>
-            <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Your Task</b></div>
+            <div style={{fontSize:'2rem' ,color:'#1c1c1c', textAlign:'center'}}><u><b>WORKER COMPENSATION</b></u></div>
+            <div style={{fontSize:'1.8rem', color:'#1c1c1c'}}><b>Your Task</b></div>
             <div>In each round, you will choose an effort level to serve the Customer. Possible effort levels and their associated costs are shown in the table below. You may choose an effort level between 0.1 and 1.0 (inclusive). The higher the effort level you choose, the higher the cost of your effort. </div>
             <div style={{
                 margin: '1rem'
@@ -129,7 +129,7 @@ const clickedNext = async () => {
       </table>
     </div>
     <br/>
-            <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Compensation</b></div>
+            <div style={{fontSize:'1.8rem', color:'#1c1c1c'}}><b>Compensation</b></div>
             <div>Worker’s compensation in each round is calculated as follows:</div>
 
              {
@@ -185,7 +185,7 @@ const clickedNext = async () => {
                 flexDirection:'column',
                 gap:'1.5rem'
             }}>
-                <div style={{fontSize:'2.3rem', color:'#1c1c1c'}}><b>Customer's Satisfaction and Compensation</b></div>
+                <div style={{fontSize:'1.8rem', color:'#1c1c1c'}}><b>Customer's Satisfaction and Compensation</b></div>
 
                 <div>
                 Importantly, <b>Customers’ level of satisfaction with your service increases with your effort level.</b> The higher the effort level you choose, the higher the Customers’ level of satisfaction. At the end of this study, Customers’ satisfaction will determine their payoff. The higher the Customers’ satisfaction, the <b>higher</b> the payoff they will receive. </div>
@@ -211,7 +211,7 @@ const clickedNext = async () => {
                 width: '8rem',
                 borderRadius: '0.2rem',
                 height: '4rem',
-                fontSize: '2.3rem',
+                fontSize: '1.8rem',
                 color: 'aliceblue',
                 backgroundColor: '#1c1c1c',
                 display: 'flex',

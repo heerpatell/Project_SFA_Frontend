@@ -75,17 +75,17 @@ const [showPost, setShowPost] = useState(false)
               color: "#1c1c1c",
               textAlign:'center',
               textAlign:"center",
-              fontSize:'3rem'
+              fontSize:'2rem'
             }}><u><b>CUSTOMER PAYOFF</b></u></div>
             <div style={{
-              fontSize:'2.3rem'
+              fontSize:'1.8rem'
             }}>
-              <div style={{color:'#1c1c1c', fontSize:'2.3rem', paddingBottom:'1rem'}}><b>Payoff</b></div>
+              <div style={{color:'#1c1c1c', fontSize:'1.8rem', paddingBottom:'1rem'}}><b>Payoff</b></div>
               <div>As a Customer, your payoff in each round is calculated as follows:</div>
             </div>
             
             <div style={{
-              fontSize:'2.3rem',
+              fontSize:'1.8rem',
               display:'flex',
               flexDirection:'column',
               gap:'1.3rem'
@@ -93,7 +93,7 @@ const [showPost, setShowPost] = useState(false)
                 {
                     showFC && (
                         <div style={{
-                          fontSize:'2.3rem',
+                          fontSize:'1.8rem',
                           display:'flex',
                           flexDirection:'column',
                           gap:'1rem'
@@ -112,7 +112,7 @@ const [showPost, setShowPost] = useState(false)
                 {
                     showSC && (
                         <div style={{
-                          fontSize:'2.3rem',
+                          fontSize:'1.8rem',
                           display:'flex',
                           flexDirection:'column',
                           gap:'1rem'
@@ -134,7 +134,7 @@ const [showPost, setShowPost] = useState(false)
                 {
                     showPre && (
                         <div style={{
-                          fontSize:'2.3rem',
+                          fontSize:'1.8rem',
                           display:'flex',
                           flexDirection:'column',
                           gap:'1rem'
@@ -155,7 +155,7 @@ const [showPost, setShowPost] = useState(false)
                 {
                     showPost && (
                         <div style={{
-                          fontSize:'2.3rem',
+                          fontSize:'1.8rem',
                           display:'flex',
                           flexDirection:'column',
                           gap:'1rem'
@@ -174,7 +174,7 @@ const [showPost, setShowPost] = useState(false)
                     )
                 }
                 <br/>
-                <div style={{color:'#1c1c1c',fontSize:'2.3rem'}}><b>Workers’ Cost of Effort and Compensation</b></div>
+                <div style={{color:'#1c1c1c',fontSize:'1.8rem'}}><b>Workers’ Cost of Effort and Compensation</b></div>
                 <div>Importantly, <b>Workers’ cost of effort increases with their effort levels.</b> The higher the effort levels they choose to serve you, the higher their cost of effort. At the end of this study, Workers’ cost of effort will determine their compensation. The higher the Workers’ cost of effort, the <b>lower</b> the compensation they will receive.</div>
                 <br/>
                 {
@@ -195,7 +195,7 @@ const [showPost, setShowPost] = useState(false)
             </div>
             <br/>
             <div style={{
-              fontSize:'2.3rem'
+              fontSize:'1.8rem'
             }}>Please click ‘Next’ to continue.</div>
             <div
               style={{
@@ -211,7 +211,7 @@ const [showPost, setShowPost] = useState(false)
                   width: '8rem',
                   borderRadius: '0.2rem',
                   height: '4rem',
-                  fontSize: '2.3rem',
+                  fontSize: '1.8rem',
                   color: 'black',
                   backgroundColor: '#1c1c1c',
                   color:'aliceblue',
