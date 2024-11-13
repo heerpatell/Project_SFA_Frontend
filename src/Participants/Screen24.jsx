@@ -118,7 +118,7 @@ function Screen24() {
           'token': localStorage.getItem('token'),
           ...responses
         };
-        await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen24`, data, {
+        await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen23`, data, {
           withCredentials: true,
         })
         .then((res)=>{
