@@ -131,7 +131,7 @@ function Screen23() {
   const allQuestionsAnswered = () => {
     const requiredQuestions = ["Controllability1", "Controllability2"];
     if (showTipQuestions) {
-      requiredQuestions.push("TipReason_Effort", "TipReason_SocialImage", "TipReason_SocialNorm");
+      requiredQuestions.push("TipReason_Effort");
     }
     return requiredQuestions.every((question) => responses[question] !== undefined);
   };

@@ -126,10 +126,7 @@ function Screen232() {
 
   // Check if all required questions are answered
   const allQuestionsAnswered = () => {
-    const requiredQuestions = ["Controllability1", "Controllability2"];
-    if (showTipQuestions) {
-      requiredQuestions.push("TipReason_Effort", "TipReason_SocialImage", "TipReason_SocialNorm");
-    }
+    const requiredQuestions = ["TipReason_SocialImage", "TipReason_SocialNorm"];
     return requiredQuestions.every((question) => responses[question] !== undefined);
   };
 
