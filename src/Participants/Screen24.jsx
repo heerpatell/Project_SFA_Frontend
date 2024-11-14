@@ -114,14 +114,9 @@ function Screen24() {
       .post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen23`, { pnumber, 'token': localStorage.getItem('token'), condition, ...responses }, {
         withCredentials: true,
       })
-      .then(async() => {
-        await axios.post(`${REACT_APP_BACKEND_URL}/generate/getassignedcategory`,{pnumber, 'token': localStorage.getItem('token')},{
-          withCredentials:true
-        })
-        .then((res)=>{
-          console.log(125, res.data)
-          navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
-        })
+      .then((res)=>{
+        console.log(125, res.data)
+        navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
       })
       .catch((error) => {
         console.error("Error saving responses", error);
