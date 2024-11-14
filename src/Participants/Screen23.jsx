@@ -198,16 +198,6 @@ function Screen23() {
                 name="TipReason_Effort"
                 onChange={(value) => handleScaleChange("TipReason_Effort", value)}
               />
-              <QuestionScale
-                question="To what extent do you perceive that the tip you received from the Customer was affected by the social pressure to tip?"
-                name="TipReason_SocialImage"
-                onChange={(value) => handleScaleChange("TipReason_SocialImage", value)}
-              />
-              <QuestionScale
-                question="To what extent do you perceive that the tip you received from the Customer was affected by how other Customers normally tip Workers?"
-                name="TipReason_SocialNorm"
-                onChange={(value) => handleScaleChange("TipReason_SocialNorm", value)}
-              />
             </>
           )}
 
