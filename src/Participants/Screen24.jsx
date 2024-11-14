@@ -111,7 +111,7 @@ function Screen24() {
   const clickedNext = () => {
     console.log("Responses:", responses);
     axios
-      .post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen23`, { pnumber, 'token': localStorage.getItem('token'), condition, ...responses }, {
+      .post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen24`, { pnumber, 'token': localStorage.getItem('token'), condition, ...responses }, {
         withCredentials: true,
       })
       .then((res)=>{
