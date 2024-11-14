@@ -63,7 +63,7 @@ function QuestionScale({ question, name, onChange }) {
   );
 }
 
-function Screen23() {
+function Screen232() {
   const [responses, setResponses] = useState({});
   const navigate = useNavigate();
   const { pnumber, condition, lastRoundCumulativeComp } = useParams();
@@ -113,9 +113,6 @@ function Screen23() {
         })
         .then((res)=>{
           if(res.data.assignedCategory == 'Worker'){
-            if(condition == 'Pre-Tip' || condition == 'Post-Tip'){
-              navigate(`/screen232/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
-            }
             navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
           }else{
             navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
@@ -179,25 +176,8 @@ function Screen23() {
             textAlign: "left",
           }}
         >
-          <QuestionScale
-            question="To what extent do you think your total compensation was affected by the effort level you chose?"
-            name="Controllability1"
-            onChange={(value) => handleScaleChange("Controllability1", value)}
-          />
-          <QuestionScale
-            question="To what extent do you think you could influence your total compensation?"
-            name="Controllability2"
-            onChange={(value) => handleScaleChange("Controllability2", value)}
-          />
-
-          {/* Tip-related questions (for Pre-Service and Post-Service Tip conditions) */}
           {showTipQuestions && (
             <>
-              <QuestionScale
-                question="To what  do you perceive that the tip you received from the Customer was affected by your effort level?"
-                name="TipReason_Effort"
-                onChange={(value) => handleScaleChange("TipReason_Effort", value)}
-              />
               <QuestionScale
                 question="To what extent do you perceive that the tip you received from the Customer was affected by the social pressure to tip?"
                 name="TipReason_SocialImage"
@@ -256,4 +236,4 @@ function Screen23() {
   );
 }
 
-export default Screen23;
+export default Screen232;
