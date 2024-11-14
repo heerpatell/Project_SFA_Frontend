@@ -69,7 +69,7 @@ function Screen62() {
         }}
       >
         <div style={{ color: "#1c1c1c", textAlign: "center",fontSize: "3rem" }}>
-            <u><b>CUSTOMER FEEDBACK</b></u>
+            <u><b>WORKER FEEDBACK</b></u>
         </div>
 
         <div style={{

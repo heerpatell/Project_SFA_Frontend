@@ -112,13 +112,13 @@ function Screen24() {
       console.log("Responses:", responses);
 
       try {
-        const data = {
-          pnumber, 
-          condition,
-          'token': localStorage.getItem('token'),
-          ...responses
-        };
-        await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen23`, data, {
+        // const data = {
+        //   pnumber, 
+        //   condition,
+        //   'token': localStorage.getItem('token'),
+        //   ...responses
+        // };
+        await axios.post(`${REACT_APP_BACKEND_URL}/generate/saveresponsesforscreen24`, {pnumber, 'token': localStorage.getItem('token'), condition, ...responses }, {
           withCredentials: true,
         })
         .then((res)=>{
