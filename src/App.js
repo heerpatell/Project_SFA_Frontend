@@ -38,6 +38,7 @@ import Waiting from './Participants/Waiting';
 import Screen62 from './Participants/Screen62';
 import Screen63 from './Participants/Screen63';
 import Screen25c from './Participants/Screen25c';
+import Screen232 from './Participants/Screen232';
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
       <Route exact path='/screen21/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen21/>}/>
       <Route exact path='/screen22/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen22/>}/>
       <Route exact path='/screen23/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen23/>}/>
+      <Route exact path='/screen232/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen232/>}/>
       <Route exact path='/screen24/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen24/>}/>
       <Route exact path='/screen25/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen25/>}/>
       <Route exact path='/screen25c/:pnumber/:condition/:lastRoundCumulativeComp' element={<Screen25c/>}/>
