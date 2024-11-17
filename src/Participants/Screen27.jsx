@@ -69,11 +69,15 @@ function Screen27() {
     verifyUser()
   },[])
 
-  const allQuestionsAnswered = () => {
-    const requiredQuestions = ["gneder", "age", "workExperience", "foodIndustryExperience"];
-    return requiredQuestions.every((question) => responses[question] !== undefined);
+  const isFormValid = () => {
+    return (
+      gender && 
+      age && 
+      workExperience && 
+      foodIndustryExperience 
+    );
   };
-
+  
   return (
     <div
       style={{
@@ -264,7 +268,7 @@ fontSize:'2.3rem',
                 alignItems: 'center',
                 opacity: (gender && age && workExperience && foodIndustryExperience) ? '1':'0.5',
               }}
-              onClick={allQuestionsAnswered() ? clickedNext : undefined} 
+              onClick={isFormValid() ? clickedNext : null}
             >
               Next
             </div>
