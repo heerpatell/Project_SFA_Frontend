@@ -141,7 +141,7 @@ function Screen22() {
     if (!isButtonEnabled) return; // Prevent clicking if the button is disabled
     console.log("Responses:", responses);
     await saveResponses();
-    navigate(`/screen232/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+    navigate(`/screen23/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
   };
 
   return (
