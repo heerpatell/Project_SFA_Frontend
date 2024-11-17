@@ -123,6 +123,11 @@ function Screen24() {
       });
   };
 
+  const allQuestionsAnswered = () => {
+    const requiredQuestions = ["TipReason_Effort", "TipReason_SocialImage", "TipReason_SocialNorm"];
+    return requiredQuestions.every((question) => responses[question] !== undefined);
+  };
+
   return (
     <div
       style={{
@@ -216,7 +221,7 @@ function Screen24() {
                 justifyContent: 'center',
                 alignItems: 'center'
               }}
-              onClick={clickedNext}
+              onClick={allQuestionsAnswered() ? clickedNext : undefined} 
             >
               Next
             </div>
