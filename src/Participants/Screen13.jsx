@@ -94,6 +94,13 @@ function Screen13() {
   useEffect(() => {
     verifyUser();
   }, []);
+
+  const isFormValid = () => {
+    return (
+      tip
+    );
+  };
+
   return (
     <>
       <div
@@ -207,7 +214,7 @@ function Screen13() {
                 justifyContent: 'center',
                 alignItems: 'center'
               }}
-              onClick={clickedNext}
+              onClick={isFormValid() ? clickedNext : null}
             >
               Next
             </div>
