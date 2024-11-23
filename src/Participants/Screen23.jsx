@@ -115,8 +115,9 @@ function Screen23() {
           if(res.data.assignedCategory == 'Worker'){
             if(condition == 'Pre-Tip' || condition == 'Post-Tip'){
               navigate(`/screen232/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
+            }else{
+              navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
             }
-            // navigate(`/screen25/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
           }else{
             navigate(`/screen25c/${pnumber}/${condition}/${lastRoundCumulativeComp}`);
           }
