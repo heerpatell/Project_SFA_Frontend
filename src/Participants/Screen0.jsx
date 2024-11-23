@@ -179,7 +179,7 @@ function Screen0() {
               </b>
               <br />
               <br />
-              You will receive a 0.5% bonus mark in the SAF Behavioral Research
+              You will receive a 1% bonus mark in the SAF Behavioral Research
               System for completing this study. In the task, you will be
               randomly assigned to the role of a customer or worker and have the
               opportunity to receive pay based on your performance in the task.
@@ -202,7 +202,7 @@ function Screen0() {
               browser window without any penalty, and without loss of benefits
               to which you are otherwise entitled. Specifically, if you withdraw
               prior to completing the study, you will still be eligible to
-              receive the 0.5% bonus mark and pay of $5.
+              receive the 1% bonus mark and pay of $5.
               <br />
             </div>
             <br />
