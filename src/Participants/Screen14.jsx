@@ -95,7 +95,7 @@ function Screen14() {
     }
   }, []);
 
-  const apicall = async () => {
+  const apicall = async (normalizedEffortLevel) => {
     console.log(98, "here");
     try {
       const x = await axios.post(
@@ -103,7 +103,7 @@ function Screen14() {
         {
           pnumber,
           currentround,
-          effortlevel,
+          effortlevel:normalizedEffortLevel,
           condition,
           token: localStorage.getItem("token"),
         },
@@ -127,7 +127,7 @@ function Screen14() {
     try {
       const normalizedEffortLevel = normalizeEffortLevel(effortlevel);
       console.log(129, normalizedEffortLevel)
-      await apicall();
+      await apicall(normalizedEffortLevel);
 
       if (condition == "Pre-Tip") {
         navigate(`/waiting/${pnumber}/${condition}/${currentround}`);
