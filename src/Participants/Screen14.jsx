@@ -116,8 +116,17 @@ function Screen14() {
       console.log("error ", e);
     }
   };
+  const normalizeEffortLevel = (effort) => {
+    if (typeof effort === "string" && effort.startsWith(".")) {
+      effort = "0" + effort; // Add leading zero if it starts with a dot
+    }
+    return parseFloat(effort); // Convert to a number
+  };
+
   const clickedNext = async () => {
     try {
+      const normalizedEffortLevel = normalizeEffortLevel(effortlevel);
+      console.log(129, normalizeEffortLevel)
       await apicall();
 
       if (condition == "Pre-Tip") {
