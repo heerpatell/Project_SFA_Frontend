@@ -126,7 +126,7 @@ function Screen14() {
   const clickedNext = async () => {
     try {
       const normalizedEffortLevel = normalizeEffortLevel(effortlevel);
-      console.log(129, normalizeEffortLevel)
+      console.log(129, normalizedEffortLevel)
       await apicall();
 
       if (condition == "Pre-Tip") {
